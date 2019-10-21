@@ -1,6 +1,15 @@
-# Enonce de travaux sur machines
+# TME on Evolutionary Algorithms
 
-S. Doncieux, 2019
-Sorbonne Université
+* Author: S. Doncieux, 2019
+* University: Sorbonne Université
 
-L'objectif de ce TME est de faire tester des algorithmes évolutionnistes tels qu'implémentés dans DEAP ou pycma avant de les tester dans un contexte d'apprentissage par renforcement avec des environnement d'Open AI Gym.
+The objective of this practical course is to test evolutionary algorithms through available python frameworks and to make a first experiment on OpenAI Gym with a reinforcement learning problem. See the jupyter-notebook `TME-IAR.ipynb` for more details.
+
+## Dependencies
+
+* DEAP
+* pycma
+* OpenAI Gym
+
+
+
