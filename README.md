@@ -1,4 +1,4 @@
-# Intelligence Artficielle et Robotique (IAR)
+# Artificial Intelligence for Robotics (IAR)
 
 [Course website](http://pages.isir.upmc.fr/~bredeche/Teaching/IAR/)
 
