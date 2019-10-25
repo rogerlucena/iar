@@ -117,16 +117,50 @@ def launch_es(mu=100,
     if verbose:
         print(logbook.stream)
 
+    # Extracting all the fitnesses of 
+    fits = [ind.fitness.values[0] for ind in population]
+
     # Boucle de l'algorithme évolutionniste
     for gen in range(1, ngen + 1):
-
         ### A completer pour implementer un ES en affichant regulièrement les resultats a l'aide de la fonction plot_results fournie ###
         ### Vous pourrez tester plusieurs des algorithmes implémentés dans DEAP pour générer une population d'"enfants"
         ### à partir de la population courante et pour sélectionner les géniteurs de la prochaine génération
 
+        # Select the next generation individuals
+        offspring = toolbox.select(population, len(population))
+        # Clone the selected individuals
+        offspring = list(map(toolbox.clone, offspring))
+
+        # Apply crossover and mutation on the offspring
+        for child1, child2 in zip(offspring[::2], offspring[1::2]):
+            if random.random() < cxpb:
+                toolbox.mate(child1, child2)
+                del child1.fitness.values
+                del child2.fitness.values
+
+        for mutant in offspring:
+            if random.random() < mutpb:
+                toolbox.mutate(mutant)
+                del mutant.fitness.values
+
+        # Evaluate the individuals with an invalid fitness
+        invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
+        fitnesses = map(toolbox.evaluate, invalid_ind)
+        for ind, fit in zip(invalid_ind, fitnesses):
+            ind.fitness.values = fit
+
+        population[:] = offspring
+
+        # Gather all the fitnesses in one list and print the stats
+        fits = [ind.fitness.values[0] for ind in population]
+
         # Update the hall of fame with the generated individuals
         if halloffame is not None:
             halloffame.update(population)
+
+        if gen % 100 == 0 or gen == 1:
+            print("Generation: ", gen)
+            plot_results(ma_func, population)
 
         # Update the statistics with the new population
         record = stats.compile(population) if stats is not None else {}
