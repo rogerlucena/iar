@@ -1,0 +1,9 @@
+Dicas - Prof. Oivier SIGAUD:
+
+- Escolher um jogo e buscar obter resultados semelhantes nele - código já dado;
+(arquitetura mais simples e menos poder computacional - falar com X, Sorbonne, Google Cloud?)
+
+- Sondar o impacto de cada estratégia no resultado final (como o efeito de Batch normalization etc)
+
+- Fazer uma pesquisa bibliográfica do que tem acontecido no domínio desde então 
+(usar Google Scholars, ver o artigo do professor usando Deep RL e ES juntos, outros semelhantes - comentar)
