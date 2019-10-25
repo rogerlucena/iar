@@ -7,7 +7,15 @@ import random
 from scipy.optimize import minimize
 
 
-def plot_results(my_func, my_points, min_x=-30, max_x=30, min_y=-30, max_y=30, nbx=100, nby=100, title="Title"):
+def plot_results(my_func,
+                 my_points,
+                 min_x=-30,
+                 max_x=30,
+                 min_y=-30,
+                 max_y=30,
+                 nbx=100,
+                 nby=100,
+                 title="Title"):
     """Plots a 2D function with a heatmap and the points given as argument are plotted on top of it
 
     Plots a 2D function with a heatmap and the points given as argument are plotted on top of it:
@@ -23,25 +31,29 @@ def plot_results(my_func, my_points, min_x=-30, max_x=30, min_y=-30, max_y=30, n
     """
     X = np.linspace(min_x, max_x, num=nbx)
     Y = np.linspace(min_y, max_y, num=nby)
-    Z=np.zeros((nbx,nby),dtype=np.double)
+    Z = np.zeros((nbx, nby), dtype=np.double)
     for i in range(nbx):
         for j in range(nby):
-            Z[i][j]=my_func([X[i],Y[j]])
-    fig,ax=plt.subplots(figsize=(5,5))
-    ax.set_xlim(min_x,max_x)
-    ax.set_ylim(min_y,max_y)
-    ax.imshow(Z, cmap='hot', interpolation='nearest',extent=(min_x,max_x,min_y,max_y))
-    
+            Z[i][j] = my_func([X[i], Y[j]])
+    fig, ax = plt.subplots(figsize=(5, 5))
+    ax.set_xlim(min_x, max_x)
+    ax.set_ylim(min_y, max_y)
+    ax.imshow(Z,
+              cmap='hot',
+              interpolation='nearest',
+              extent=(min_x, max_x, min_y, max_y))
+
     #print("Points: "+str(my_points))
-    x=[]
-    y=[]
+    x = []
+    y = []
     for p in my_points:
         x.append(p[0])
         y.append(p[1])
 
-    ax.plot(x,y,".")
+    ax.plot(x, y, ".")
     ax.set_title(title)
     plt.show()
+
 
 def plot_violin(res):
     """ Makes a violin plot of the results provided in the argument
@@ -49,15 +61,13 @@ def plot_violin(res):
     Makes a violin plot of the results provided in the argument.
     :param res: dictionary of the results to plot. The key is the name and the data is a vector of performance values.
     """
-    fig,ax=plt.subplots(figsize=(5,5))
-    data=[]
-    labels=[]
+    fig, ax = plt.subplots(figsize=(5, 5))
+    data = []
+    labels = []
     for k in res.keys():
         data.append(res[k])
         labels.append(k)
-    ax.violinplot(data,
-                   showmeans=False,
-                   showmedians=True)
+    ax.violinplot(data, showmeans=False, showmedians=True)
     ax.set_title('Violin plot')
     # adding horizontal grid lines
     ax.yaxis.grid(True)
@@ -66,9 +76,6 @@ def plot_violin(res):
     ax.set_ylabel('Best value found')
 
     # add x-tick labels
-    plt.setp(ax, xticks=[y + 1 for y in range(len(data))],
-        xticklabels=labels)
+    plt.setp(ax, xticks=[y + 1 for y in range(len(data))], xticklabels=labels)
     plt.setp(ax.get_xticklabels(), rotation=30, ha="right")
     plt.show()
-
-
