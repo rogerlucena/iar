@@ -21,10 +21,16 @@ ma_func = ackley
 ############## Test CMA-ES ###################
 
 
-def launch_cmaes(center, sigma, nbeval=10000, display=True):
+def launch_cmaes(center=(20,20), sigma=0.1, nbeval=10000, display=True):
     es = cma.CMAEvolutionStrategy(center, sigma)
 
     ### A completer pour utiliser CMA-ES et tracer les individus générés à chaque étape avec plot_results###
+    es.optimize(ma_func)
+    
+    while not es.stop:
+        solutions = es.ask()
+        es.tell(solutions, [cma.ff.rosen(s) for s in solutions])
+        plot_results(ma_func, solutions)
 
     return es.result[1]
 
