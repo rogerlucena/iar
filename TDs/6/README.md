@@ -10,6 +10,3 @@ The objective of this practical course is to test evolutionary algorithms throug
 * DEAP
 * pycma
 * OpenAI Gym
-
-
-
