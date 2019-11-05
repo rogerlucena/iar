@@ -128,3 +128,8 @@ dmypy.json
 
 # vscode
 .vscode/
+
+# Latex
+*.aux
+*.out
+*.log
