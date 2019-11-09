@@ -22,6 +22,51 @@ from scoop import futures
 
 from novelty_search import *
 
+creator.create("FitnessMin", base.Fitness, weights=(-1.0, -1.0))
+creator.create("Individual",
+               array.array,
+               typecode='d',
+               fitness=creator.FitnessMin)
+
+toolbox = base.Toolbox()
+
+BOUND_LOW, BOUND_UP = 0.0, 1.0
+
+# Functions zdt4 has bounds x1 = [0, 1], xn = [-5, 5], with n = 2, ..., 10
+# BOUND_LOW, BOUND_UP = [0.0] + [-5.0]*9, [1.0] + [5.0]*9
+
+# Functions zdt1, zdt2, zdt3 have 30 dimensions, zdt4 and zdt6 have 10
+NDIM = 30
+
+
+def uniform(low, up, size=None):
+    try:
+        return [random.uniform(a, b) for a, b in zip(low, up)]
+    except TypeError:
+        return [
+            random.uniform(a, b) for a, b in zip([low] * size, [up] * size)
+        ]
+
+
+toolbox.register("attr_float", uniform, BOUND_LOW, BOUND_UP, NDIM)
+toolbox.register("individual", tools.initIterate, creator.Individual,
+                 toolbox.attr_float)
+toolbox.register("population", tools.initRepeat, list, toolbox.individual)
+
+toolbox.register("evaluate", benchmarks.zdt1)
+toolbox.register("mate",
+                 tools.cxSimulatedBinaryBounded,
+                 low=BOUND_LOW,
+                 up=BOUND_UP,
+                 eta=20.0)
+toolbox.register("mutate",
+                 tools.mutPolynomialBounded,
+                 low=BOUND_LOW,
+                 up=BOUND_UP,
+                 eta=20.0,
+                 indpb=1.0 / NDIM)
+toolbox.register("select", tools.selNSGA2)
+
 
 def eval_nn(genotype, nbstep=2000, dump=False, render=False, name=""):
     nn = SimpleNeuralControllerNumpy(5, 2, 2, 10)
