@@ -1,0 +1,656 @@
+
+ =-= Roborobo! 
+ =-= nicolas.bredeche(at)upmc.fr
+ =-= Current build name      : Tokyo build (roborobo^3 w/ SDL2)
+ =-= Official version tag    : 20170114
+ =-= Compilation version tag : Jan 26 2017 - 10:16:57
+
+[INFO] Command-line parameter: properties will be loaded from file "config/template_vanillaEE.properties".
+[INFO] Current location : /Users/nicolas/Desktop/__Dropbox/Dropbox/Corailbox/code/Repositories/git/roborobo3/roborobo3
+
+
+[INFO] gScreenDisplayHeight not defined, using gScreenDisplayHeight value.
+[INFO] gScreenDisplayWidth not defined, using gScreenDisplayWidth value.
+[MISSING] gTailLength value is missing. Assume default value (16).
+[WARNING] gMaxRadioDistance is set, but is useless.
+[WARNING] gRobotDisplayImageFilename string value is missing (value will be copied from gRobotMaskImageFilename).
+[WARNING] No default gLogFilename string value. Log data will be written in "datalog_20170127-14h29m38s086073us.txt"
+[INFO] No default gLogDirectoryname string value. Log data will be written in "logs/"
+
+=-=-=-=-=-=-=-=-=-=-=-= roborobo! =-=-=-=-=-=-=-=-=-=-=-=
+Fast 2D autonomous agent simulator for large population of robots/agents
+nicolas.bredeche(at)upmc.fr
+Official version tag    : 20170114
+Current build name      : Tokyo build (roborobo^3 w/ SDL2)
+
+Compilation version tag : Jan 26 2017 - 10:16:57
+ >>>> Keys:
+       h : help! (ie. this text)
+       r : refresh on-screen rendering (no impact on simulation)
+       n : radio network communication on/off
+       d : set display mode - (1) default-60-fps; (2) fast; (3) fastest-no-display. (shift+d: inverse)
+       v : verbose on/off (console)
+       p : pause/freeze simulation (display mode)
+       s : slow mode on/off (switch it off if display is off)
+       x : ("X-ray mode") debug display mode on/off
+       f : highlight current focused agent on/off (display mode)
+       z : display ground type caption on/off (display mode)
+       g : ("god mode") switch agent/inspector mode - follow selected agent or move freely (display mode)
+       i : inspect currently selected agent on/off (display sensor and motor values on console)
+       j : show / dont show sensor raycasting and visual markers (display mode)
+       l : show / dont show LED color on top of the robots (display mode)
+       o : take screenshot - save image to disk (in ./logs) (display mode)
+       O : video recording start/stop - save images to disk (in ./logs) (display mode)
+       t : start/stop tracking trajectories (all agents) - save image to disk (in ./logs) (display mode)
+       T : start/stop tracking trajectories (target agent) - save image to disk (in ./logs) (display mode)
+   <tab> : switch focus to next agent (shift+o: previous agent)
+ <enter> : (in agent following mode) trigger manual agent control mode
+ <enter> : (in inspector mode) sample and display sensor values at current location
+   <esc> : quit
+=-=-=-=-=-=-=-=-=-=-=-= roborobo! =-=-=-=-=-=-=-=-=-=-=-=
+
+[MISSING] PhysicalObjectFactory: object #0, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #0 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #0 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #0 (of super type CircleObject) positioned at (   774 ,   455 ) -- [random pick after 1 try]
+[MISSING] Physical Object #0 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #0 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #1, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #1 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #1 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #1 (of super type CircleObject) positioned at (   100 ,   622 ) -- [random pick after 1 try]
+[MISSING] Physical Object #1 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #1 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #2, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #2 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #2 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #2 (of super type CircleObject) positioned at (   330 ,   288 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #2 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #2 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #3, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #3 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #3 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #3 (of super type CircleObject) positioned at (   623 ,   838 ) -- [random pick after 1 try]
+[MISSING] Physical Object #3 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #3 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #4, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #4 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #4 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #4 (of super type CircleObject) positioned at (   565 ,    83 ) -- [random pick after 1 try]
+[MISSING] Physical Object #4 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #4 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #5, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #5 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #5 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #5 (of super type CircleObject) positioned at (   766 ,   782 ) -- [random pick after 1 try]
+[MISSING] Physical Object #5 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #5 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #6, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #6 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #6 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #6 (of super type CircleObject) positioned at (   526 ,   440 ) -- [random pick after 1 try]
+[MISSING] Physical Object #6 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #6 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #7, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #7 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #7 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #7 (of super type CircleObject) positioned at (   740 ,   326 ) -- [random pick after 1 try]
+[MISSING] Physical Object #7 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #7 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #8, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #8 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #8 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #8 (of super type CircleObject) positioned at (   503 ,   524 ) -- [random pick after 3 tries]
+[MISSING] Physical Object #8 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #8 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #9, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #9 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #9 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #9 (of super type CircleObject) positioned at (   406 ,   460 ) -- [random pick after 3 tries]
+[MISSING] Physical Object #9 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #9 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #10, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #10 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #10 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #10 (of super type CircleObject) positioned at (   663 ,   921 ) -- [random pick after 1 try]
+[MISSING] Physical Object #10 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #10 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #11, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #11 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #11 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #11 (of super type CircleObject) positioned at (   612 ,   895 ) -- [random pick after 1 try]
+[MISSING] Physical Object #11 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #11 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #12, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #12 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #12 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #12 (of super type CircleObject) positioned at (   296 ,   515 ) -- [random pick after 1 try]
+[MISSING] Physical Object #12 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #12 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #13, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #13 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #13 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #13 (of super type CircleObject) positioned at (   747 ,   558 ) -- [random pick after 1 try]
+[MISSING] Physical Object #13 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #13 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #14, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #14 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #14 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #14 (of super type CircleObject) positioned at (   890 ,   635 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #14 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #14 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #15, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #15 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #15 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #15 (of super type CircleObject) positioned at (   242 ,   411 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #15 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #15 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #16, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #16 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #16 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #16 (of super type CircleObject) positioned at (   110 ,   456 ) -- [random pick after 1 try]
+[MISSING] Physical Object #16 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #16 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #17, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #17 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #17 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #17 (of super type CircleObject) positioned at (   162 ,   212 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #17 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #17 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #18, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #18 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #18 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #18 (of super type CircleObject) positioned at (   309 ,   626 ) -- [random pick after 1 try]
+[MISSING] Physical Object #18 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #18 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #19, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #19 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #19 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #19 (of super type CircleObject) positioned at (   911 ,   315 ) -- [random pick after 1 try]
+[MISSING] Physical Object #19 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #19 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #20, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #20 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #20 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #20 (of super type CircleObject) positioned at (   862 ,   732 ) -- [random pick after 1 try]
+[MISSING] Physical Object #20 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #20 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #21, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #21 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #21 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #21 (of super type CircleObject) positioned at (   732 ,   128 ) -- [random pick after 1 try]
+[MISSING] Physical Object #21 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #21 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #22, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #22 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #22 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #22 (of super type CircleObject) positioned at (   856 ,   642 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #22 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #22 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #23, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #23 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #23 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #23 (of super type CircleObject) positioned at (   389 ,   187 ) -- [random pick after 1 try]
+[MISSING] Physical Object #23 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #23 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #24, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #24 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #24 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #24 (of super type CircleObject) positioned at (   245 ,   370 ) -- [random pick after 1 try]
+[MISSING] Physical Object #24 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #24 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #25, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #25 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #25 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #25 (of super type CircleObject) positioned at (   566 ,   358 ) -- [random pick after 3 tries]
+[MISSING] Physical Object #25 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #25 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #26, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #26 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #26 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #26 (of super type CircleObject) positioned at (   177 ,   710 ) -- [random pick after 1 try]
+[MISSING] Physical Object #26 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #26 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #27, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #27 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #27 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #27 (of super type CircleObject) positioned at (   819 ,   436 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #27 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #27 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #28, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #28 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #28 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #28 (of super type CircleObject) positioned at (   383 ,   748 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #28 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #28 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #29, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #29 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #29 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #29 (of super type CircleObject) positioned at (   643 ,   308 ) -- [random pick after 1 try]
+[MISSING] Physical Object #29 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #29 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #30, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #30 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #30 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #30 (of super type CircleObject) positioned at (   893 ,   378 ) -- [random pick after 1 try]
+[MISSING] Physical Object #30 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #30 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #31, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #31 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #31 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #31 (of super type CircleObject) positioned at (   442 ,   203 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #31 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #31 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #32, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #32 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #32 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #32 (of super type CircleObject) positioned at (   391 ,   237 ) -- [random pick after 5 tries]
+[MISSING] Physical Object #32 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #32 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #33, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #33 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #33 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #33 (of super type CircleObject) positioned at (   699 ,   106 ) -- [random pick after 1 try]
+[MISSING] Physical Object #33 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #33 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #34, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #34 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #34 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #34 (of super type CircleObject) positioned at (   249 ,   156 ) -- [random pick after 1 try]
+[MISSING] Physical Object #34 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #34 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #35, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #35 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #35 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #35 (of super type CircleObject) positioned at (   477 ,    73 ) -- [random pick after 3 tries]
+[MISSING] Physical Object #35 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #35 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #36, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #36 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #36 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #36 (of super type CircleObject) positioned at (   729 ,   264 ) -- [random pick after 1 try]
+[MISSING] Physical Object #36 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #36 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #37, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #37 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #37 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #37 (of super type CircleObject) positioned at (   327 ,   712 ) -- [random pick after 1 try]
+[MISSING] Physical Object #37 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #37 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #38, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #38 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #38 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #38 (of super type CircleObject) positioned at (   275 ,   894 ) -- [random pick after 1 try]
+[MISSING] Physical Object #38 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #38 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #39, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #39 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #39 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #39 (of super type CircleObject) positioned at (    74 ,   542 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #39 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #39 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #40, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #40 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #40 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #40 (of super type CircleObject) positioned at (   577 ,   733 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #40 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #40 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #41, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #41 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #41 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #41 (of super type CircleObject) positioned at (   571 ,   875 ) -- [random pick after 1 try]
+[MISSING] Physical Object #41 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #41 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #42, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #42 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #42 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #42 (of super type CircleObject) positioned at (   718 ,   572 ) -- [random pick after 6 tries]
+[MISSING] Physical Object #42 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #42 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #43, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #43 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #43 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #43 (of super type CircleObject) positioned at (   850 ,   540 ) -- [random pick after 2 tries]
+[MISSING] Physical Object #43 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #43 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #44, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #44 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #44 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #44 (of super type CircleObject) positioned at (   184 ,   529 ) -- [random pick after 1 try]
+[MISSING] Physical Object #44 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #44 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #45, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #45 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #45 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #45 (of super type CircleObject) positioned at (   676 ,   398 ) -- [random pick after 1 try]
+[MISSING] Physical Object #45 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #45 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #46, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #46 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #46 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #46 (of super type CircleObject) positioned at (   695 ,   306 ) -- [random pick after 4 tries]
+[MISSING] Physical Object #46 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #46 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #47, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #47 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #47 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #47 (of super type CircleObject) positioned at (   584 ,   484 ) -- [random pick after 1 try]
+[MISSING] Physical Object #47 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #47 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #48, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #48 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #48 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #48 (of super type CircleObject) positioned at (   818 ,   348 ) -- [random pick after 1 try]
+[MISSING] Physical Object #48 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #48 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[MISSING] PhysicalObjectFactory: object #49, type is missing. Assume type 1.
+[INFO] Energy Item created (type = 1).
+[MISSING] Physical Object #49 (of super type CircleObject) missing radius (integer, >=0). Check default value.
+[MISSING] Physical Object #49 (of super type CircleObject) missing footprint radius (integer, >=0). Check default value.
+[INFO] Physical Object #49 (of super type CircleObject) positioned at (   289 ,   394 ) -- [random pick after 1 try]
+[MISSING] Physical Object #49 (EnergyItem) missing default energy initial level (integer, >=0). Assume default (1000).
+[MISSING] Physical Object #49 (EnergyItem) missing default energy mode (integer, >=0). Assume default (3).
+[INFO] Robot #0 positioned at (   525 ,    95 ) with orientation -172.205° -- [random pick after 1 try]
+[INFO] Robot #1 positioned at (   490 ,    32 ) with orientation  56.2338° -- [random pick after 1 try]
+[INFO] Robot #2 positioned at (   803 ,   498 ) with orientation  111.174° -- [random pick after 1 try]
+[INFO] Robot #3 positioned at (   449 ,   627 ) with orientation  85.4198° -- [random pick after 1 try]
+[INFO] Robot #4 positioned at (   796 ,   562 ) with orientation -171.576° -- [random pick after 2 tries]
+[INFO] Robot #5 positioned at (   112 ,   563 ) with orientation -63.0026° -- [random pick after 1 try]
+[INFO] Robot #6 positioned at (   618 ,   775 ) with orientation -38.8139° -- [random pick after 2 tries]
+[INFO] Robot #7 positioned at (   454 ,   197 ) with orientation  39.4486° -- [random pick after 2 tries]
+[INFO] Robot #8 positioned at (   655 ,   652 ) with orientation  169.534° -- [random pick after 1 try]
+[INFO] Robot #9 positioned at (   226 ,   837 ) with orientation  146.254° -- [random pick after 2 tries]
+[INFO] Robot #10 positioned at (   448 ,   180 ) with orientation  101.508° -- [random pick after 2 tries]
+[INFO] Robot #11 positioned at (   469 ,   939 ) with orientation -30.3725° -- [random pick after 3 tries]
+[INFO] Robot #12 positioned at (   507 ,   209 ) with orientation  25.0364° -- [random pick after 2 tries]
+[INFO] Robot #13 positioned at (   867 ,   222 ) with orientation -76.5984° -- [random pick after 1 try]
+[INFO] Robot #14 positioned at (   126 ,   260 ) with orientation  -149.57° -- [random pick after 1 try]
+[INFO] Robot #15 positioned at (   630 ,    94 ) with orientation -47.0001° -- [random pick after 1 try]
+[INFO] Robot #16 positioned at (   795 ,   474 ) with orientation  -112.68° -- [random pick after 3 tries]
+[INFO] Robot #17 positioned at (   531 ,   645 ) with orientation -140.271° -- [random pick after 1 try]
+[INFO] Robot #18 positioned at (   666 ,   851 ) with orientation -63.8793° -- [random pick after 1 try]
+[INFO] Robot #19 positioned at (   796 ,   666 ) with orientation  91.2459° -- [random pick after 1 try]
+[INFO] Robot #20 positioned at (   688 ,    99 ) with orientation -122.949° -- [random pick after 1 try]
+[INFO] Robot #21 positioned at (   463 ,   724 ) with orientation   83.746° -- [random pick after 1 try]
+[INFO] Robot #22 positioned at (   864 ,   612 ) with orientation  176.495° -- [random pick after 1 try]
+[INFO] Robot #23 positioned at (   828 ,   512 ) with orientation  159.874° -- [random pick after 1 try]
+[INFO] Robot #24 positioned at (   687 ,   580 ) with orientation -89.5686° -- [random pick after 1 try]
+[INFO] Robot #25 positioned at (   104 ,   606 ) with orientation  82.8181° -- [random pick after 1 try]
+[INFO] Robot #26 positioned at (   567 ,    61 ) with orientation  64.9459° -- [random pick after 1 try]
+[INFO] Robot #27 positioned at (   351 ,   247 ) with orientation  119.112° -- [random pick after 1 try]
+[INFO] Robot #28 positioned at (   142 ,   759 ) with orientation -37.3706° -- [random pick after 1 try]
+[INFO] Robot #29 positioned at (   322 ,   404 ) with orientation -33.4515° -- [random pick after 1 try]
+[INFO] Robot #30 positioned at (   374 ,    48 ) with orientation  71.2071° -- [random pick after 1 try]
+[INFO] Robot #31 positioned at (   479 ,   549 ) with orientation -49.2815° -- [random pick after 3 tries]
+[INFO] Robot #32 positioned at (   469 ,   929 ) with orientation  79.5046° -- [random pick after 1 try]
+[INFO] Robot #33 positioned at (   307 ,   683 ) with orientation -13.5929° -- [random pick after 2 tries]
+[INFO] Robot #34 positioned at (   359 ,   440 ) with orientation  81.9358° -- [random pick after 1 try]
+[INFO] Robot #35 positioned at (   870 ,   622 ) with orientation -99.1231° -- [random pick after 2 tries]
+[INFO] Robot #36 positioned at (   656 ,   772 ) with orientation -7.76859° -- [random pick after 1 try]
+[INFO] Robot #37 positioned at (   471 ,   349 ) with orientation -128.151° -- [random pick after 2 tries]
+[INFO] Robot #38 positioned at (   726 ,   397 ) with orientation  10.4555° -- [random pick after 1 try]
+[INFO] Robot #39 positioned at (   134 ,   319 ) with orientation -130.279° -- [random pick after 1 try]
+[INFO] Robot #40 positioned at (   412 ,   543 ) with orientation  125.769° -- [random pick after 1 try]
+[INFO] Robot #41 positioned at (   656 ,   141 ) with orientation  88.0554° -- [random pick after 1 try]
+[INFO] Robot #42 positioned at (   471 ,    58 ) with orientation -47.6803° -- [random pick after 2 tries]
+[INFO] Robot #43 positioned at (   540 ,   854 ) with orientation  21.4539° -- [random pick after 1 try]
+[INFO] Robot #44 positioned at (   504 ,   193 ) with orientation -168.062° -- [random pick after 1 try]
+[INFO] Robot #45 positioned at (   718 ,   216 ) with orientation  23.9665° -- [random pick after 1 try]
+[INFO] Robot #46 positioned at (   547 ,   489 ) with orientation  58.0161° -- [random pick after 1 try]
+[INFO] Robot #47 positioned at (   709 ,   408 ) with orientation  -0.3267° -- [random pick after 1 try]
+[INFO] Robot #48 positioned at (   456 ,   616 ) with orientation  33.9989° -- [random pick after 3 tries]
+[INFO] Robot #49 positioned at (   403 ,    80 ) with orientation -165.086° -- [random pick after 1 try]
+[INFO] Robot #50 positioned at (   274 ,   478 ) with orientation  45.0975° -- [random pick after 1 try]
+[INFO] Robot #51 positioned at (   770 ,   851 ) with orientation  113.813° -- [random pick after 1 try]
+[INFO] Robot #52 positioned at (   167 ,   384 ) with orientation  172.637° -- [random pick after 2 tries]
+[INFO] Robot #53 positioned at (   304 ,   817 ) with orientation -30.0016° -- [random pick after 3 tries]
+[INFO] Robot #54 positioned at (   786 ,   381 ) with orientation -160.765° -- [random pick after 5 tries]
+[INFO] Robot #55 positioned at (   699 ,   537 ) with orientation -104.967° -- [random pick after 1 try]
+[INFO] Robot #56 positioned at (   922 ,   296 ) with orientation -15.9442° -- [random pick after 2 tries]
+[INFO] Robot #57 positioned at (   738 ,   170 ) with orientation  57.7396° -- [random pick after 1 try]
+[INFO] Robot #58 positioned at (   525 ,   344 ) with orientation  39.5373° -- [random pick after 1 try]
+[INFO] Robot #59 positioned at (   361 ,   371 ) with orientation -19.1918° -- [random pick after 1 try]
+[INFO] Robot #60 positioned at (   452 ,   893 ) with orientation   140.52° -- [random pick after 4 tries]
+[INFO] Robot #61 positioned at (   808 ,   211 ) with orientation -98.9077° -- [random pick after 1 try]
+[INFO] Robot #62 positioned at (   591 ,   642 ) with orientation -96.7011° -- [random pick after 1 try]
+[INFO] Robot #63 positioned at (   857 ,   266 ) with orientation  23.7478° -- [random pick after 1 try]
+[INFO] Robot #64 positioned at (   788 ,   825 ) with orientation  98.5204° -- [random pick after 1 try]
+[INFO] Robot #65 positioned at (   194 ,   511 ) with orientation   166.47° -- [random pick after 3 tries]
+[INFO] Robot #66 positioned at (   649 ,   797 ) with orientation -176.216° -- [random pick after 1 try]
+[INFO] Robot #67 positioned at (   686 ,   805 ) with orientation  78.2265° -- [random pick after 1 try]
+[INFO] Robot #68 positioned at (    98 ,   743 ) with orientation -85.1247° -- [random pick after 2 tries]
+[INFO] Robot #69 positioned at (   266 ,    97 ) with orientation  84.3712° -- [random pick after 2 tries]
+[INFO] Robot #70 positioned at (   710 ,    98 ) with orientation -76.1434° -- [random pick after 1 try]
+[INFO] Robot #71 positioned at (   815 ,   407 ) with orientation  135.621° -- [random pick after 1 try]
+[INFO] Robot #72 positioned at (   240 ,   452 ) with orientation -40.5226° -- [random pick after 1 try]
+[INFO] Robot #73 positioned at (   784 ,   593 ) with orientation  53.5264° -- [random pick after 1 try]
+[INFO] Robot #74 positioned at (   430 ,    79 ) with orientation  79.3991° -- [random pick after 1 try]
+[INFO] Robot #75 positioned at (   290 ,   448 ) with orientation -129.944° -- [random pick after 1 try]
+[INFO] Robot #76 positioned at (   780 ,   399 ) with orientation  154.919° -- [random pick after 3 tries]
+[INFO] Robot #77 positioned at (   769 ,   243 ) with orientation  177.223° -- [random pick after 1 try]
+[INFO] Robot #78 positioned at (   618 ,   512 ) with orientation  177.565° -- [random pick after 1 try]
+[INFO] Robot #79 positioned at (   309 ,   503 ) with orientation -51.3375° -- [random pick after 1 try]
+[INFO] Robot #80 positioned at (   629 ,   117 ) with orientation -92.0096° -- [random pick after 2 tries]
+[INFO] Robot #81 positioned at (   858 ,   386 ) with orientation  35.2806° -- [random pick after 5 tries]
+[INFO] Robot #82 positioned at (   774 ,   826 ) with orientation -19.3552° -- [random pick after 1 try]
+[INFO] Robot #83 positioned at (   554 ,   679 ) with orientation  73.3483° -- [random pick after 2 tries]
+[INFO] Robot #84 positioned at (   736 ,   282 ) with orientation  106.309° -- [random pick after 1 try]
+[INFO] Robot #85 positioned at (   172 ,   168 ) with orientation -122.351° -- [random pick after 1 try]
+[INFO] Robot #86 positioned at (   228 ,   376 ) with orientation -74.3686° -- [random pick after 1 try]
+[INFO] Robot #87 positioned at (   442 ,   504 ) with orientation -9.19531° -- [random pick after 1 try]
+[INFO] Robot #88 positioned at (   566 ,   751 ) with orientation  83.6691° -- [random pick after 1 try]
+[INFO] Robot #89 positioned at (   389 ,   358 ) with orientation  74.3047° -- [random pick after 1 try]
+[INFO] Robot #90 positioned at (   328 ,   492 ) with orientation -137.055° -- [random pick after 1 try]
+[INFO] Robot #91 positioned at (   690 ,   255 ) with orientation  12.7321° -- [random pick after 1 try]
+[INFO] Robot #92 positioned at (   402 ,   402 ) with orientation  172.311° -- [random pick after 1 try]
+[INFO] Robot #93 positioned at (   401 ,   438 ) with orientation  129.919° -- [random pick after 1 try]
+[INFO] Robot #94 positioned at (   791 ,   139 ) with orientation  75.8859° -- [random pick after 2 tries]
+[INFO] Robot #95 positioned at (   406 ,   211 ) with orientation  80.5511° -- [random pick after 1 try]
+[INFO] Robot #96 positioned at (   336 ,   664 ) with orientation  142.431° -- [random pick after 1 try]
+[INFO] Robot #97 positioned at (   346 ,   279 ) with orientation -158.821° -- [random pick after 1 try]
+[INFO] Robot #98 positioned at (   610 ,   964 ) with orientation -160.261° -- [random pick after 1 try]
+[INFO] Robot #99 positioned at (   332 ,   150 ) with orientation  30.9205° -- [random pick after 3 tries]
+[INFO] Robot #100 positioned at (   832 ,   629 ) with orientation  62.2016° -- [random pick after 3 tries]
+[INFO] Robot #101 positioned at (   616 ,   540 ) with orientation -59.4964° -- [random pick after 1 try]
+[INFO] Robot #102 positioned at (   671 ,   335 ) with orientation  119.577° -- [random pick after 1 try]
+[INFO] Robot #103 positioned at (   453 ,   800 ) with orientation -95.2367° -- [random pick after 1 try]
+[INFO] Robot #104 positioned at (   561 ,   646 ) with orientation  -150.97° -- [random pick after 2 tries]
+[INFO] Robot #105 positioned at (   125 ,   769 ) with orientation   2.0066° -- [random pick after 1 try]
+[INFO] Robot #106 positioned at (   579 ,   692 ) with orientation  19.8883° -- [random pick after 2 tries]
+[INFO] Robot #107 positioned at (   261 ,   206 ) with orientation -92.3434° -- [random pick after 2 tries]
+[INFO] Robot #108 positioned at (   282 ,   638 ) with orientation  97.2499° -- [random pick after 2 tries]
+[INFO] Robot #109 positioned at (   742 ,   134 ) with orientation  172.979° -- [random pick after 2 tries]
+[INFO] Robot #110 positioned at (   764 ,   628 ) with orientation  -92.921° -- [random pick after 1 try]
+[INFO] Robot #111 positioned at (   444 ,   780 ) with orientation  46.2303° -- [random pick after 1 try]
+[INFO] Robot #112 positioned at (   511 ,   736 ) with orientation  43.3054° -- [random pick after 3 tries]
+[INFO] Robot #113 positioned at (   225 ,   520 ) with orientation  22.4694° -- [random pick after 2 tries]
+[INFO] Robot #114 positioned at (   267 ,   325 ) with orientation  98.0421° -- [random pick after 2 tries]
+[INFO] Robot #115 positioned at (   724 ,   608 ) with orientation -71.9611° -- [random pick after 1 try]
+[INFO] Robot #116 positioned at (   213 ,   401 ) with orientation  -138.53° -- [random pick after 1 try]
+[INFO] Robot #117 positioned at (   283 ,   267 ) with orientation -6.94832° -- [random pick after 2 tries]
+[INFO] Robot #118 positioned at (    83 ,   502 ) with orientation  4.27201° -- [random pick after 1 try]
+[INFO] Robot #119 positioned at (   382 ,   892 ) with orientation  160.121° -- [random pick after 3 tries]
+[INFO] Robot #120 positioned at (   149 ,   795 ) with orientation  39.0841° -- [random pick after 2 tries]
+[INFO] Robot #121 positioned at (   108 ,   258 ) with orientation  -101.91° -- [random pick after 2 tries]
+[INFO] Robot #122 positioned at (   468 ,   464 ) with orientation  68.9255° -- [random pick after 1 try]
+[INFO] Robot #123 positioned at (   694 ,   907 ) with orientation  155.129° -- [random pick after 2 tries]
+[INFO] Robot #124 positioned at (   739 ,   224 ) with orientation -6.02368° -- [random pick after 1 try]
+[INFO] Robot #125 positioned at (   895 ,   402 ) with orientation  52.0633° -- [random pick after 3 tries]
+[INFO] Robot #126 positioned at (   547 ,   450 ) with orientation  143.741° -- [random pick after 1 try]
+[INFO] Robot #127 positioned at (   665 ,   290 ) with orientation -160.783° -- [random pick after 1 try]
+[INFO] Robot #128 positioned at (   465 ,   857 ) with orientation -93.8223° -- [random pick after 1 try]
+[INFO] Robot #129 positioned at (   542 ,   337 ) with orientation -154.933° -- [random pick after 2 tries]
+[INFO] Robot #130 positioned at (   300 ,   212 ) with orientation  75.7745° -- [random pick after 1 try]
+[INFO] Robot #131 positioned at (   444 ,   530 ) with orientation  66.1484° -- [random pick after 1 try]
+[INFO] Robot #132 positioned at (   218 ,   588 ) with orientation  128.378° -- [random pick after 2 tries]
+[INFO] Robot #133 positioned at (   719 ,   505 ) with orientation  142.521° -- [random pick after 1 try]
+[INFO] Robot #134 positioned at (   310 ,   883 ) with orientation -14.3899° -- [random pick after 2 tries]
+[INFO] Robot #135 positioned at (   562 ,   945 ) with orientation -120.599° -- [random pick after 1 try]
+[INFO] Robot #136 positioned at (    60 ,   363 ) with orientation  94.3461° -- [random pick after 2 tries]
+[INFO] Robot #137 positioned at (   619 ,   922 ) with orientation -71.6362° -- [random pick after 2 tries]
+[INFO] Robot #138 positioned at (   337 ,   337 ) with orientation  30.8306° -- [random pick after 1 try]
+[INFO] Robot #139 positioned at (   670 ,   839 ) with orientation  132.984° -- [random pick after 1 try]
+[INFO] Robot #140 positioned at (   553 ,   207 ) with orientation  52.3019° -- [random pick after 3 tries]
+[INFO] Robot #141 positioned at (   363 ,    63 ) with orientation   166.89° -- [random pick after 2 tries]
+[INFO] Robot #142 positioned at (   679 ,   148 ) with orientation  92.7365° -- [random pick after 1 try]
+[INFO] Robot #143 positioned at (   338 ,   944 ) with orientation  172.262° -- [random pick after 1 try]
+[INFO] Robot #144 positioned at (   573 ,   935 ) with orientation  7.52277° -- [random pick after 1 try]
+[INFO] Robot #145 positioned at (   360 ,   276 ) with orientation -67.1831° -- [random pick after 1 try]
+[INFO] Robot #146 positioned at (   603 ,   385 ) with orientation   105.57° -- [random pick after 1 try]
+[INFO] Robot #147 positioned at (   410 ,   610 ) with orientation  100.134° -- [random pick after 3 tries]
+[INFO] Robot #148 positioned at (   449 ,   116 ) with orientation -4.54138° -- [random pick after 1 try]
+[INFO] Robot #149 positioned at (   302 ,   830 ) with orientation  -90.632° -- [random pick after 3 tries]
+[INFO] Robot #150 positioned at (   752 ,   343 ) with orientation  5.45238° -- [random pick after 2 tries]
+[INFO] Robot #151 positioned at (   707 ,   547 ) with orientation -121.059° -- [random pick after 1 try]
+[INFO] Robot #152 positioned at (   823 ,   455 ) with orientation   115.31° -- [random pick after 1 try]
+[INFO] Robot #153 positioned at (   626 ,   181 ) with orientation   50.105° -- [random pick after 1 try]
+[INFO] Robot #154 positioned at (   287 ,   225 ) with orientation -147.974° -- [random pick after 2 tries]
+[INFO] Robot #155 positioned at (   348 ,   186 ) with orientation -43.7368° -- [random pick after 1 try]
+[INFO] Robot #156 positioned at (   153 ,   718 ) with orientation  18.1122° -- [random pick after 1 try]
+[INFO] Robot #157 positioned at (   220 ,   844 ) with orientation  139.314° -- [random pick after 2 tries]
+[INFO] Robot #158 positioned at (   164 ,   323 ) with orientation  87.3631° -- [random pick after 2 tries]
+[INFO] Robot #159 positioned at (   443 ,   687 ) with orientation -179.197° -- [random pick after 2 tries]
+[INFO] Robot #160 positioned at (   529 ,   807 ) with orientation  -73.892° -- [random pick after 1 try]
+[INFO] Robot #161 positioned at (   765 ,   193 ) with orientation -69.1785° -- [random pick after 1 try]
+[INFO] Robot #162 positioned at (   531 ,   841 ) with orientation -130.768° -- [random pick after 1 try]
+[INFO] Robot #163 positioned at (   115 ,   349 ) with orientation -90.8211° -- [random pick after 1 try]
+[INFO] Robot #164 positioned at (   242 ,   701 ) with orientation  116.343° -- [random pick after 2 tries]
+[INFO] Robot #165 positioned at (   400 ,   543 ) with orientation -112.101° -- [random pick after 1 try]
+[INFO] Robot #166 positioned at (   666 ,   398 ) with orientation -59.9729° -- [random pick after 1 try]
+[INFO] Robot #167 positioned at (   436 ,   222 ) with orientation  17.6462° -- [random pick after 2 tries]
+[INFO] Robot #168 positioned at (   395 ,    73 ) with orientation  57.0557° -- [random pick after 1 try]
+[INFO] Robot #169 positioned at (   736 ,   411 ) with orientation -157.424° -- [random pick after 1 try]
+[INFO] Robot #170 positioned at (   876 ,   320 ) with orientation -132.204° -- [random pick after 1 try]
+[INFO] Robot #171 positioned at (   273 ,   493 ) with orientation  98.0006° -- [random pick after 1 try]
+[INFO] Robot #172 positioned at (   569 ,   299 ) with orientation  13.8669° -- [random pick after 2 tries]
+[INFO] Robot #173 positioned at (   877 ,   509 ) with orientation  79.0486° -- [random pick after 1 try]
+[INFO] Robot #174 positioned at (   379 ,   464 ) with orientation -130.753° -- [random pick after 3 tries]
+[INFO] Robot #175 positioned at (   296 ,   607 ) with orientation -14.9495° -- [random pick after 1 try]
+[INFO] Robot #176 positioned at (   912 ,   467 ) with orientation -166.292° -- [random pick after 1 try]
+[INFO] Robot #177 positioned at (   667 ,   324 ) with orientation -153.769° -- [random pick after 1 try]
+[INFO] Robot #178 positioned at (   416 ,   301 ) with orientation -137.337° -- [random pick after 1 try]
+[INFO] Robot #179 positioned at (   823 ,   320 ) with orientation -79.8018° -- [random pick after 1 try]
+[INFO] Robot #180 positioned at (   819 ,   414 ) with orientation -153.126° -- [random pick after 1 try]
+[INFO] Robot #181 positioned at (   886 ,   251 ) with orientation -150.981° -- [random pick after 1 try]
+[INFO] Robot #182 positioned at (   129 ,   239 ) with orientation  65.9429° -- [random pick after 1 try]
+[INFO] Robot #183 positioned at (   420 ,   165 ) with orientation -37.1531° -- [random pick after 1 try]
+[INFO] Robot #184 positioned at (   874 ,   548 ) with orientation  140.095° -- [random pick after 1 try]
+[INFO] Robot #185 positioned at (   288 ,   590 ) with orientation -35.5197° -- [random pick after 2 tries]
+[INFO] Robot #186 positioned at (   199 ,   493 ) with orientation  170.896° -- [random pick after 2 tries]
+[INFO] Robot #187 positioned at (   946 ,   337 ) with orientation   58.574° -- [random pick after 1 try]
+[INFO] Robot #188 positioned at (   608 ,   933 ) with orientation  140.893° -- [random pick after 1 try]
+[INFO] Robot #189 positioned at (   792 ,   124 ) with orientation  81.7379° -- [random pick after 1 try]
+[INFO] Robot #190 positioned at (   293 ,   786 ) with orientation  155.188° -- [random pick after 1 try]
+[INFO] Robot #191 positioned at (   413 ,   443 ) with orientation  34.7321° -- [random pick after 2 tries]
+[INFO] Robot #192 positioned at (   812 ,   375 ) with orientation -69.2933° -- [random pick after 1 try]
+[INFO] Robot #193 positioned at (   828 ,   262 ) with orientation -95.2481° -- [random pick after 1 try]
+[INFO] Robot #194 positioned at (   702 ,   590 ) with orientation -154.558° -- [random pick after 2 tries]
+[INFO] Robot #195 positioned at (   447 ,   552 ) with orientation -56.1329° -- [random pick after 1 try]
+[INFO] Robot #196 positioned at (   465 ,   873 ) with orientation  7.52279° -- [random pick after 1 try]
+[INFO] Robot #197 positioned at (   479 ,   761 ) with orientation  171.147° -- [random pick after 2 tries]
+[INFO] Robot #198 positioned at (   276 ,   219 ) with orientation -36.2948° -- [random pick after 1 try]
+[INFO] Robot #199 positioned at (   630 ,   140 ) with orientation  23.7838° -- [random pick after 2 tries]
+[START] Video recording: generation #0.
+[gen:0;it:399;pop:200;avgFitness:0.435]
+log,0,399,200,0,4,0.435
+[STOP]  Video recording: generation #0.
+[gen:1;it:799;pop:188;avgFitness:0.340426]
+log,1,799,188,0,3,0.340426
+[122 fps]
+[gen:2;it:1199;pop:184;avgFitness:0.5]
+log,2,1199,184,0,5,0.5
+[gen:3;it:1599;pop:189;avgFitness:0.550265]
+log,3,1599,189,0,5,0.550265
+[gen:4;it:1999;pop:193;avgFitness:0.761658]
+log,4,1999,193,0,5,0.761658
+[139 fps]
+[gen:5;it:2399;pop:199;avgFitness:0.854271]
+log,5,2399,199,0,5,0.854271
+[gen:6;it:2799;pop:199;avgFitness:0.81407]
+log,6,2799,199,0,6,0.81407
+[137 fps]
+[gen:7;it:3199;pop:200;avgFitness:1.245]
+log,7,3199,200,0,6,1.245
+[gen:8;it:3599;pop:200;avgFitness:1.125]
+log,8,3599,200,0,5,1.125
+[gen:9;it:3999;pop:200;avgFitness:1.155]
+log,9,3999,200,0,8,1.155
+[135 fps]
+[START] Video recording: generation #10.
+[gen:10;it:4399;pop:200;avgFitness:1.395]
+log,10,4399,200,0,6,1.395
+[STOP]  Video recording: generation #10.
+[gen:11;it:4799;pop:200;avgFitness:1.38]
+log,11,4799,200,0,10,1.38
+[126 fps]
+[gen:12;it:5199;pop:200;avgFitness:1.43]
+log,12,5199,200,0,6,1.43
+[gen:13;it:5599;pop:200;avgFitness:1.4]
+log,13,5599,200,0,7,1.4
+[gen:14;it:5999;pop:200;avgFitness:1.48]
+log,14,5999,200,0,8,1.48
+[130 fps]
+[gen:15;it:6399;pop:199;avgFitness:1.65829]
+log,15,6399,199,0,8,1.65829
+[gen:16;it:6799;pop:200;avgFitness:1.67]
+log,16,6799,200,0,8,1.67
+[135 fps]
+[gen:17;it:7199;pop:200;avgFitness:1.79]
+log,17,7199,200,0,8,1.79
+
+Terminated by user!
+
+[timestamp::start] 20170127-14h29m38s086073us
+[timestamp::stop ] 20170127-14h30m36s710296us
+[Chronometer] 58 seconds.
+
+Program ended with exit code: 0
