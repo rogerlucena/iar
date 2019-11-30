@@ -14,6 +14,8 @@ Roadmap
 
 * Run Canonical ES with current architecture - compare and comment
 * Run OpenAI ES with available architecture - compare and comment
-* Simply NN architecure - compare and comment
+* Simplify NN architecture - compare and comment
 * Modify training parameter - compare and comment
 * Research state of the art - compare and comment
+
+Chosen game: Pong
