@@ -20,6 +20,17 @@ class TMEboidsController : public Controller
     
 		void reset();
 		void step();
+
+		
+		int isRobotAt(int id);
+
+		double getmin(int a, int b, int c);
+
+		double getMeanDistGauche();
+		double getMeanDistDroite();
+		int getNbRobotsVus();
+		int getNbRobotsVusAgauche();
+		double getMeanOrientation();
 };
 
 
