@@ -1,6 +1,6 @@
 # Final Project
 
-Install MPI and requirements in `./canonical-es/src/requirements/txt`
+Install MPI and requirements in `./canonical-es/src/requirements.txt`
 
 ```bash
 ./canonical-es/src/submit/simple_submit.sh
