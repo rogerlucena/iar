@@ -60,3 +60,54 @@ def Nature(c_i, out_num, nonlin, is_training):
     # this scale to be centered in 1 instead of 0
     c_i = scale_shift(c_i, name="scale")
     return c_i
+
+def Nature_No_BN(c_i, out_num, nonlin, is_training):
+    # Adjust bn_args dictionary
+    bn_args["activation_fn"] = nonlin
+    bn_args["is_training"] = is_training
+    c_i = conv(c_i, 32, 8, 4, **conv_args)
+
+    c_i = conv(c_i, 64, 4, 2, **conv_args)
+    c_i = bn(c_i, **bn_args)
+
+    c_i = conv(c_i, 64, 3, 1, **conv_args)
+
+    c_i = tf.reshape(c_i, [-1, np.prod([int(s) for s in c_i.get_shape()[1:]])])
+    c_i = fc(c_i, num_outputs=512, **dense_args)
+
+    # We can't use "center" here. We have to apply scale first and then shift
+    # This will be done with "scale_shift" layer
+    bn_args["center"] = False
+    bn_args["activation_fn"] = None
+    c_i = fc(c_i, num_outputs=out_num, **dense_args)
+
+    # We can't add scale to this batch norm because we might want to apply L2 reg and we would like
+    # this scale to be centered in 1 instead of 0
+    c_i = scale_shift(c_i, name="scale")
+    return c_i
+
+def Nature_Simple(c_i, out_num, nonlin, is_training):
+    # Adjust bn_args dictionary
+    bn_args["activation_fn"] = nonlin
+    bn_args["is_training"] = is_training
+    c_i = conv(c_i, 32, 8, 4, **conv_args)
+    c_i = bn(c_i, **bn_args)
+
+    c_i = conv(c_i, 64, 3, 1, **conv_args)
+    c_i = bn(c_i, **bn_args)
+
+    c_i = tf.reshape(c_i, [-1, np.prod([int(s) for s in c_i.get_shape()[1:]])])
+    c_i = fc(c_i, num_outputs=512, **dense_args)
+    c_i = bn(c_i, **bn_args)
+
+    # We can't use "center" here. We have to apply scale first and then shift
+    # This will be done with "scale_shift" layer
+    bn_args["center"] = False
+    bn_args["activation_fn"] = None
+    c_i = fc(c_i, num_outputs=out_num, **dense_args)
+    c_i = bn(c_i, **bn_args)
+
+    # We can't add scale to this batch norm because we might want to apply L2 reg and we would like
+    # this scale to be centered in 1 instead of 0
+    c_i = scale_shift(c_i, name="scale")
+    return c_i
