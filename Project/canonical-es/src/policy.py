@@ -1,5 +1,5 @@
 from src.env_wrappers import wrap_dqn
-from src.models import Nature
+from src.models import Nature, Nature_No_BN, Nature_Simple
 import tensorflow as tf
 import numpy as np
 
@@ -15,6 +15,8 @@ nonlin_dict = {
 # If you add a new network you should add "string --> class" mapping here.
 network_dict = {
     "Nature": Nature,
+    "Nature_No_BN": Nature_No_BN,
+    "Nature_Simple": Nature_Simple
 }
 
 
