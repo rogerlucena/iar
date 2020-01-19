@@ -1,0 +1,2458 @@
+Game                     Pong
+Network                  Nature
+Optimizer                CanonicalESOptimizer
+Number of CPUs           4
+Population               6
+Dimensionality           1687212
+Lambda                   6
+Mu                       4
+LearningRate             1.000000
+MuW                      2.600179
+CSigma                   0.000003
+CSigmaFactor             1.000000
+Const1                   0.003765
+------------------------------------
+Iteration                1.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          5060.000000
+StepsThisIter            5060.000000
+IterationTime            7.489104
+TimeSinceStart           1.249534
+ParamNorm           65.503067
+StepNorm            8.059571
+Sigma               0.010000
+PSigmaNorm          3.034798
+------------------------------------
+------------------------------------
+Iteration                2.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -19.000000
+StepsSinceStart          10275.000000
+StepsThisIter            5215.000000
+IterationTime            6.672322
+TimeSinceStart           1.361182
+ParamNorm           66.005783
+StepNorm            8.056218
+Sigma               0.010000
+PSigmaNorm          4.290904
+------------------------------------
+------------------------------------
+Iteration                3.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          14922.000000
+StepsThisIter            4647.000000
+IterationTime            6.576514
+TimeSinceStart           1.471154
+ParamNorm           66.494255
+StepNorm            8.058849
+Sigma               0.010000
+PSigmaNorm          5.255473
+------------------------------------
+------------------------------------
+Iteration                4.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.000000
+TrainMaxReward           -16.000000
+StepsSinceStart          21659.000000
+StepsThisIter            6737.000000
+IterationTime            9.066843
+TimeSinceStart           1.622593
+ParamNorm           66.979790
+StepNorm            8.048369
+Sigma               0.010000
+PSigmaNorm          6.065168
+------------------------------------
+------------------------------------
+Iteration                5.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          26509.000000
+StepsThisIter            4850.000000
+IterationTime            6.159483
+TimeSinceStart           1.725593
+ParamNorm           67.457542
+StepNorm            8.053378
+Sigma               0.010000
+PSigmaNorm          6.782062
+------------------------------------
+------------------------------------
+Iteration                6.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          31216.000000
+StepsThisIter            4707.000000
+IterationTime            5.733687
+TimeSinceStart           1.821526
+ParamNorm           67.931480
+StepNorm            8.053105
+Sigma               0.010000
+PSigmaNorm          7.428020
+------------------------------------
+------------------------------------
+Iteration                7.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          35919.000000
+StepsThisIter            4703.000000
+IterationTime            5.691354
+TimeSinceStart           1.916734
+ParamNorm           68.412628
+StepNorm            8.061929
+Sigma               0.010000
+PSigmaNorm          8.025745
+------------------------------------
+------------------------------------
+Iteration                8.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          40717.000000
+StepsThisIter            4798.000000
+IterationTime            6.190883
+TimeSinceStart           2.020238
+ParamNorm           68.889282
+StepNorm            8.056958
+Sigma               0.010000
+PSigmaNorm          8.581660
+------------------------------------
+------------------------------------
+Iteration                9.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          45541.000000
+StepsThisIter            4824.000000
+IterationTime            8.372342
+TimeSinceStart           2.160136
+ParamNorm           69.362099
+StepNorm            8.058064
+Sigma               0.010000
+PSigmaNorm          9.102277
+------------------------------------
+------------------------------------
+Iteration                10.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          51812.000000
+StepsThisIter            6271.000000
+IterationTime            9.409328
+TimeSinceStart           2.317355
+ParamNorm           69.833450
+StepNorm            8.057042
+Sigma               0.010000
+PSigmaNorm          9.600232
+------------------------------------
+------------------------------------
+Iteration                11.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          56631.000000
+StepsThisIter            4819.000000
+IterationTime            6.571531
+TimeSinceStart           2.427311
+ParamNorm           70.292992
+StepNorm            8.054300
+Sigma               0.010000
+PSigmaNorm          10.070775
+------------------------------------
+------------------------------------
+Iteration                12.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          61704.000000
+StepsThisIter            5073.000000
+IterationTime            7.844701
+TimeSinceStart           2.559063
+ParamNorm           70.753487
+StepNorm            8.059805
+Sigma               0.010000
+PSigmaNorm          10.517020
+------------------------------------
+------------------------------------
+Iteration                13.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          66660.000000
+StepsThisIter            4956.000000
+IterationTime            7.424637
+TimeSinceStart           2.683174
+ParamNorm           71.199928
+StepNorm            8.055850
+Sigma               0.010000
+PSigmaNorm          10.944631
+------------------------------------
+------------------------------------
+Iteration                14.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -19.500000
+TrainMaxReward           -14.000000
+StepsSinceStart          72074.000000
+StepsThisIter            5414.000000
+IterationTime            8.324586
+TimeSinceStart           2.822811
+ParamNorm           71.657883
+StepNorm            8.054700
+Sigma               0.010000
+PSigmaNorm          11.355968
+------------------------------------
+------------------------------------
+Iteration                15.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          77467.000000
+StepsThisIter            5393.000000
+IterationTime            6.903701
+TimeSinceStart           2.938234
+ParamNorm           72.119652
+StepNorm            8.058735
+Sigma               0.010000
+PSigmaNorm          11.757775
+------------------------------------
+------------------------------------
+Iteration                16.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          82718.000000
+StepsThisIter            5251.000000
+IterationTime            7.420178
+TimeSinceStart           3.062278
+ParamNorm           72.578407
+StepNorm            8.051143
+Sigma               0.010000
+PSigmaNorm          12.141372
+------------------------------------
+------------------------------------
+Iteration                17.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          87346.000000
+StepsThisIter            4628.000000
+IterationTime            5.733801
+TimeSinceStart           3.158195
+ParamNorm           73.020592
+StepNorm            8.062335
+Sigma               0.010000
+PSigmaNorm          12.513808
+------------------------------------
+------------------------------------
+Iteration                18.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          93628.000000
+StepsThisIter            6282.000000
+IterationTime            8.171049
+TimeSinceStart           3.294694
+ParamNorm           73.467323
+StepNorm            8.052904
+Sigma               0.010000
+PSigmaNorm          12.878477
+------------------------------------
+------------------------------------
+Iteration                19.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          99132.000000
+StepsThisIter            5504.000000
+IterationTime            7.778163
+TimeSinceStart           3.424702
+ParamNorm           73.901726
+StepNorm            8.061498
+Sigma               0.010000
+PSigmaNorm          13.230131
+------------------------------------
+------------------------------------
+Iteration                20.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          105418.000000
+StepsThisIter            6286.000000
+IterationTime            9.189854
+TimeSinceStart           3.578123
+ParamNorm           74.338783
+StepNorm            8.059570
+Sigma               0.010000
+PSigmaNorm          13.571675
+------------------------------------
+------------------------------------
+Iteration                21.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          110505.000000
+StepsThisIter            5087.000000
+IterationTime            6.720552
+TimeSinceStart           3.690494
+ParamNorm           74.783958
+StepNorm            8.054888
+Sigma               0.010000
+PSigmaNorm          13.907711
+------------------------------------
+------------------------------------
+Iteration                22.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          115643.000000
+StepsThisIter            5138.000000
+IterationTime            6.409766
+TimeSinceStart           3.797829
+ParamNorm           75.215492
+StepNorm            8.052550
+Sigma               0.010000
+PSigmaNorm          14.238276
+------------------------------------
+------------------------------------
+Iteration                23.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          120335.000000
+StepsThisIter            4692.000000
+IterationTime            5.887254
+TimeSinceStart           3.896294
+ParamNorm           75.647163
+StepNorm            8.062658
+Sigma               0.010000
+PSigmaNorm          14.556806
+------------------------------------
+------------------------------------
+Iteration                24.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          125247.000000
+StepsThisIter            4912.000000
+IterationTime            6.195152
+TimeSinceStart           3.999784
+ParamNorm           76.077881
+StepNorm            8.054138
+Sigma               0.010000
+PSigmaNorm          14.871187
+------------------------------------
+------------------------------------
+Iteration                25.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          132511.000000
+StepsThisIter            7264.000000
+IterationTime            9.722069
+TimeSinceStart           4.162140
+ParamNorm           76.500671
+StepNorm            8.056254
+Sigma               0.010000
+PSigmaNorm          15.179306
+------------------------------------
+------------------------------------
+Iteration                26.000000
+EvalMeanReward           -19.500000
+EvalMaxReward            -19.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          137135.000000
+StepsThisIter            4624.000000
+IterationTime            6.207278
+TimeSinceStart           4.265962
+ParamNorm           76.920227
+StepNorm            8.055454
+Sigma               0.010000
+PSigmaNorm          15.477069
+------------------------------------
+------------------------------------
+Iteration                27.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          142062.000000
+StepsThisIter            4927.000000
+IterationTime            6.332056
+TimeSinceStart           4.371868
+ParamNorm           77.338669
+StepNorm            8.055532
+Sigma               0.010000
+PSigmaNorm          15.771820
+------------------------------------
+------------------------------------
+Iteration                28.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          147473.000000
+StepsThisIter            5411.000000
+IterationTime            7.395336
+TimeSinceStart           4.495455
+ParamNorm           77.762016
+StepNorm            8.050297
+Sigma               0.010000
+PSigmaNorm          16.056966
+------------------------------------
+------------------------------------
+Iteration                29.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          152724.000000
+StepsThisIter            5251.000000
+IterationTime            6.663126
+TimeSinceStart           4.606871
+ParamNorm           78.187019
+StepNorm            8.058242
+Sigma               0.010000
+PSigmaNorm          16.347065
+------------------------------------
+------------------------------------
+Iteration                30.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          157846.000000
+StepsThisIter            5122.000000
+IterationTime            6.861507
+TimeSinceStart           4.721819
+ParamNorm           78.600441
+StepNorm            8.052508
+Sigma               0.010000
+PSigmaNorm          16.623154
+------------------------------------
+------------------------------------
+Iteration                31.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          162661.000000
+StepsThisIter            4815.000000
+IterationTime            6.039418
+TimeSinceStart           4.822831
+ParamNorm           79.008339
+StepNorm            8.048220
+Sigma               0.010000
+PSigmaNorm          16.897234
+------------------------------------
+------------------------------------
+Iteration                32.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          167526.000000
+StepsThisIter            4865.000000
+IterationTime            9.086619
+TimeSinceStart           4.974800
+ParamNorm           79.419495
+StepNorm            8.055984
+Sigma               0.010000
+PSigmaNorm          17.166729
+------------------------------------
+------------------------------------
+Iteration                33.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          173406.000000
+StepsThisIter            5880.000000
+IterationTime            10.835295
+TimeSinceStart           5.155686
+ParamNorm           79.813431
+StepNorm            8.049360
+Sigma               0.010000
+PSigmaNorm          17.424588
+------------------------------------
+------------------------------------
+Iteration                34.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          178172.000000
+StepsThisIter            4766.000000
+IterationTime            9.093417
+TimeSinceStart           5.307621
+ParamNorm           80.208389
+StepNorm            8.059046
+Sigma               0.010000
+PSigmaNorm          17.683659
+------------------------------------
+------------------------------------
+Iteration                35.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          183157.000000
+StepsThisIter            4985.000000
+IterationTime            7.602516
+TimeSinceStart           5.434648
+ParamNorm           80.618164
+StepNorm            8.063295
+Sigma               0.010000
+PSigmaNorm          17.946242
+------------------------------------
+------------------------------------
+Iteration                36.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          188595.000000
+StepsThisIter            5438.000000
+IterationTime            10.252526
+TimeSinceStart           5.605868
+ParamNorm           81.022163
+StepNorm            8.053875
+Sigma               0.010000
+PSigmaNorm          18.200962
+------------------------------------
+------------------------------------
+Iteration                37.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          193883.000000
+StepsThisIter            5288.000000
+IterationTime            7.232203
+TimeSinceStart           5.726781
+ParamNorm           81.425697
+StepNorm            8.049867
+Sigma               0.009999
+PSigmaNorm          18.452298
+------------------------------------
+------------------------------------
+Iteration                38.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          199741.000000
+StepsThisIter            5858.000000
+IterationTime            10.717213
+TimeSinceStart           5.905765
+ParamNorm           81.821289
+StepNorm            8.054289
+Sigma               0.009999
+PSigmaNorm          18.699763
+------------------------------------
+------------------------------------
+Iteration                39.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          204573.000000
+StepsThisIter            4832.000000
+IterationTime            9.871961
+TimeSinceStart           6.070648
+ParamNorm           82.221603
+StepNorm            8.055595
+Sigma               0.009999
+PSigmaNorm          18.946096
+------------------------------------
+------------------------------------
+Iteration                40.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          210572.000000
+StepsThisIter            5999.000000
+IterationTime            11.514758
+TimeSinceStart           6.262956
+ParamNorm           82.605827
+StepNorm            8.042392
+Sigma               0.009999
+PSigmaNorm          19.185873
+------------------------------------
+------------------------------------
+Iteration                41.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -18.500000
+TrainMaxReward           -6.000000
+StepsSinceStart          218278.000000
+StepsThisIter            7706.000000
+IterationTime            16.695391
+TimeSinceStart           6.541609
+ParamNorm           82.996269
+StepNorm            8.049757
+Sigma               0.009999
+PSigmaNorm          19.421908
+------------------------------------
+------------------------------------
+Iteration                42.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          225023.000000
+StepsThisIter            6745.000000
+IterationTime            14.119759
+TimeSinceStart           6.777506
+ParamNorm           83.388191
+StepNorm            8.053498
+Sigma               0.009999
+PSigmaNorm          19.658409
+------------------------------------
+------------------------------------
+Iteration                43.000000
+EvalMeanReward           -14.000000
+EvalMaxReward            -8.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          230180.000000
+StepsThisIter            5157.000000
+IterationTime            10.715488
+TimeSinceStart           6.956512
+ParamNorm           83.783447
+StepNorm            8.052962
+Sigma               0.009999
+PSigmaNorm          19.895084
+------------------------------------
+------------------------------------
+Iteration                44.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -17.000000
+TrainMaxReward           -12.000000
+StepsSinceStart          238473.000000
+StepsThisIter            8293.000000
+IterationTime            16.067257
+TimeSinceStart           7.224716
+ParamNorm           84.155884
+StepNorm            8.055629
+Sigma               0.009999
+PSigmaNorm          20.124168
+------------------------------------
+------------------------------------
+Iteration                45.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -17.833333
+TrainMaxReward           -11.000000
+StepsSinceStart          245346.000000
+StepsThisIter            6873.000000
+IterationTime            11.981620
+TimeSinceStart           7.425217
+ParamNorm           84.543587
+StepNorm            8.063386
+Sigma               0.009999
+PSigmaNorm          20.348621
+------------------------------------
+------------------------------------
+Iteration                46.000000
+EvalMeanReward           -17.500000
+EvalMaxReward            -14.000000
+TrainMeanReward          -19.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          252203.000000
+StepsThisIter            6857.000000
+IterationTime            9.853425
+TimeSinceStart           7.589679
+ParamNorm           84.927887
+StepNorm            8.061001
+Sigma               0.009999
+PSigmaNorm          20.573820
+------------------------------------
+------------------------------------
+Iteration                47.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -17.333333
+TrainMaxReward           -3.000000
+StepsSinceStart          259813.000000
+StepsThisIter            7610.000000
+IterationTime            14.029970
+TimeSinceStart           7.823900
+ParamNorm           85.305984
+StepNorm            8.048610
+Sigma               0.009999
+PSigmaNorm          20.794444
+------------------------------------
+------------------------------------
+Iteration                48.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          266148.000000
+StepsThisIter            6335.000000
+IterationTime            12.896331
+TimeSinceStart           8.039235
+ParamNorm           85.684677
+StepNorm            8.049780
+Sigma               0.009999
+PSigmaNorm          21.015549
+------------------------------------
+------------------------------------
+Iteration                49.000000
+EvalMeanReward           -15.500000
+EvalMaxReward            -10.000000
+TrainMeanReward          -20.333333
+TrainMaxReward           -20.000000
+StepsSinceStart          271454.000000
+StepsThisIter            5306.000000
+IterationTime            11.264546
+TimeSinceStart           8.227325
+ParamNorm           86.060852
+StepNorm            8.049809
+Sigma               0.009999
+PSigmaNorm          21.235211
+------------------------------------
+------------------------------------
+Iteration                50.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          276269.000000
+StepsThisIter            4815.000000
+IterationTime            7.353773
+TimeSinceStart           8.350229
+ParamNorm           86.433998
+StepNorm            8.059056
+Sigma               0.009999
+PSigmaNorm          21.452926
+------------------------------------
+------------------------------------
+Iteration                51.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          281336.000000
+StepsThisIter            5067.000000
+IterationTime            6.465833
+TimeSinceStart           8.458323
+ParamNorm           86.812866
+StepNorm            8.056154
+Sigma               0.009999
+PSigmaNorm          21.666916
+------------------------------------
+------------------------------------
+Iteration                52.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          286256.000000
+StepsThisIter            4920.000000
+IterationTime            6.326205
+TimeSinceStart           8.564257
+ParamNorm           87.178993
+StepNorm            8.050463
+Sigma               0.009999
+PSigmaNorm          21.876531
+------------------------------------
+------------------------------------
+Iteration                53.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          290941.000000
+StepsThisIter            4685.000000
+IterationTime            6.272682
+TimeSinceStart           8.669165
+ParamNorm           87.548584
+StepNorm            8.058723
+Sigma               0.009999
+PSigmaNorm          22.084938
+------------------------------------
+------------------------------------
+Iteration                54.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          295554.000000
+StepsThisIter            4613.000000
+IterationTime            6.978471
+TimeSinceStart           8.785836
+ParamNorm           87.916931
+StepNorm            8.053058
+Sigma               0.009999
+PSigmaNorm          22.292804
+------------------------------------
+------------------------------------
+Iteration                55.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          300187.000000
+StepsThisIter            4633.000000
+IterationTime            6.373483
+TimeSinceStart           8.892392
+ParamNorm           88.283157
+StepNorm            8.051252
+Sigma               0.009999
+PSigmaNorm          22.500398
+------------------------------------
+------------------------------------
+Iteration                56.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          304958.000000
+StepsThisIter            4771.000000
+IterationTime            6.201690
+TimeSinceStart           8.996121
+ParamNorm           88.649094
+StepNorm            8.056308
+Sigma               0.009999
+PSigmaNorm          22.701578
+------------------------------------
+------------------------------------
+Iteration                57.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -19.000000
+StepsSinceStart          309791.000000
+StepsThisIter            4833.000000
+IterationTime            7.987671
+TimeSinceStart           9.129600
+ParamNorm           89.013390
+StepNorm            8.050681
+Sigma               0.009999
+PSigmaNorm          22.897686
+------------------------------------
+------------------------------------
+Iteration                58.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          314890.000000
+StepsThisIter            5099.000000
+IterationTime            10.874030
+TimeSinceStart           9.311336
+ParamNorm           89.380249
+StepNorm            8.053648
+Sigma               0.009999
+PSigmaNorm          23.098817
+------------------------------------
+------------------------------------
+Iteration                59.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          321694.000000
+StepsThisIter            6804.000000
+IterationTime            10.921696
+TimeSinceStart           9.493752
+ParamNorm           89.737663
+StepNorm            8.057389
+Sigma               0.009999
+PSigmaNorm          23.293053
+------------------------------------
+------------------------------------
+Iteration                60.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          326673.000000
+StepsThisIter            4979.000000
+IterationTime            7.483655
+TimeSinceStart           9.618824
+ParamNorm           90.106392
+StepNorm            8.052316
+Sigma               0.009999
+PSigmaNorm          23.495293
+------------------------------------
+------------------------------------
+Iteration                61.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          331376.000000
+StepsThisIter            4703.000000
+IterationTime            12.771007
+TimeSinceStart           9.831934
+ParamNorm           90.454308
+StepNorm            8.057986
+Sigma               0.009999
+PSigmaNorm          23.689474
+------------------------------------
+------------------------------------
+Iteration                62.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          336226.000000
+StepsThisIter            4850.000000
+IterationTime            8.161760
+TimeSinceStart           9.968850
+ParamNorm           90.800308
+StepNorm            8.046138
+Sigma               0.009999
+PSigmaNorm          23.881693
+------------------------------------
+------------------------------------
+Iteration                63.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.166667
+TrainMaxReward           -20.000000
+StepsSinceStart          341542.000000
+StepsThisIter            5316.000000
+IterationTime            7.541378
+TimeSinceStart           10.095114
+ParamNorm           91.156021
+StepNorm            8.055900
+Sigma               0.009999
+PSigmaNorm          24.074363
+------------------------------------
+------------------------------------
+Iteration                64.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          346424.000000
+StepsThisIter            4882.000000
+IterationTime            7.370189
+TimeSinceStart           10.219043
+ParamNorm           91.501526
+StepNorm            8.048017
+Sigma               0.009999
+PSigmaNorm          24.262719
+------------------------------------
+------------------------------------
+Iteration                65.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.000000
+TrainMaxReward           -17.000000
+StepsSinceStart          352805.000000
+StepsThisIter            6381.000000
+IterationTime            11.251792
+TimeSinceStart           10.406889
+ParamNorm           91.848701
+StepNorm            8.046038
+Sigma               0.009999
+PSigmaNorm          24.449365
+------------------------------------
+------------------------------------
+Iteration                66.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.333333
+TrainMaxReward           -19.000000
+StepsSinceStart          358504.000000
+StepsThisIter            5699.000000
+IterationTime            7.521432
+TimeSinceStart           10.532617
+ParamNorm           92.208252
+StepNorm            8.050067
+Sigma               0.009999
+PSigmaNorm          24.641541
+------------------------------------
+------------------------------------
+Iteration                67.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          363525.000000
+StepsThisIter            5021.000000
+IterationTime            9.920798
+TimeSinceStart           10.698177
+ParamNorm           92.564934
+StepNorm            8.052312
+Sigma               0.009999
+PSigmaNorm          24.830452
+------------------------------------
+------------------------------------
+Iteration                68.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          368282.000000
+StepsThisIter            4757.000000
+IterationTime            6.397200
+TimeSinceStart           10.805119
+ParamNorm           92.916626
+StepNorm            8.054222
+Sigma               0.009999
+PSigmaNorm          25.018048
+------------------------------------
+------------------------------------
+Iteration                69.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.333333
+TrainMaxReward           -20.000000
+StepsSinceStart          373195.000000
+StepsThisIter            4913.000000
+IterationTime            6.194147
+TimeSinceStart           10.908699
+ParamNorm           93.262451
+StepNorm            8.060216
+Sigma               0.009999
+PSigmaNorm          25.198232
+------------------------------------
+------------------------------------
+Iteration                70.000000
+EvalMeanReward           -19.500000
+EvalMaxReward            -18.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          378188.000000
+StepsThisIter            4993.000000
+IterationTime            6.344665
+TimeSinceStart           11.014810
+ParamNorm           93.616936
+StepNorm            8.060815
+Sigma               0.009999
+PSigmaNorm          25.383422
+------------------------------------
+------------------------------------
+Iteration                71.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          382959.000000
+StepsThisIter            4771.000000
+IterationTime            5.664325
+TimeSinceStart           11.109489
+ParamNorm           93.968765
+StepNorm            8.048405
+Sigma               0.009999
+PSigmaNorm          25.564785
+------------------------------------
+------------------------------------
+Iteration                72.000000
+EvalMeanReward           -11.000000
+EvalMaxReward            -1.000000
+TrainMeanReward          -20.166667
+TrainMaxReward           -19.000000
+StepsSinceStart          389225.000000
+StepsThisIter            6266.000000
+IterationTime            13.397982
+TimeSinceStart           11.333136
+ParamNorm           94.317627
+StepNorm            8.051920
+Sigma               0.009999
+PSigmaNorm          25.742506
+------------------------------------
+------------------------------------
+Iteration                73.000000
+EvalMeanReward           -18.000000
+EvalMaxReward            -16.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -19.000000
+StepsSinceStart          394360.000000
+StepsThisIter            5135.000000
+IterationTime            7.488498
+TimeSinceStart           11.458234
+ParamNorm           94.664474
+StepNorm            8.056327
+Sigma               0.009999
+PSigmaNorm          25.918945
+------------------------------------
+------------------------------------
+Iteration                74.000000
+EvalMeanReward           -19.000000
+EvalMaxReward            -18.000000
+TrainMeanReward          -20.000000
+TrainMaxReward           -18.000000
+StepsSinceStart          399447.000000
+StepsThisIter            5087.000000
+IterationTime            6.928866
+TimeSinceStart           11.573889
+ParamNorm           95.007439
+StepNorm            8.049789
+Sigma               0.009999
+PSigmaNorm          26.094302
+------------------------------------
+------------------------------------
+Iteration                75.000000
+EvalMeanReward           -19.500000
+EvalMaxReward            -19.000000
+TrainMeanReward          -18.500000
+TrainMaxReward           -14.000000
+StepsSinceStart          405559.000000
+StepsThisIter            6112.000000
+IterationTime            8.583876
+TimeSinceStart           11.717301
+ParamNorm           95.332870
+StepNorm            8.055344
+Sigma               0.009999
+PSigmaNorm          26.266068
+------------------------------------
+------------------------------------
+Iteration                76.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -20.166667
+TrainMaxReward           -19.000000
+StepsSinceStart          410813.000000
+StepsThisIter            5254.000000
+IterationTime            6.631089
+TimeSinceStart           11.828201
+ParamNorm           95.663582
+StepNorm            8.053595
+Sigma               0.009999
+PSigmaNorm          26.436522
+------------------------------------
+------------------------------------
+Iteration                77.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -19.333333
+TrainMaxReward           -17.000000
+StepsSinceStart          416617.000000
+StepsThisIter            5804.000000
+IterationTime            7.347506
+TimeSinceStart           11.951002
+ParamNorm           96.011253
+StepNorm            8.052380
+Sigma               0.009999
+PSigmaNorm          26.613057
+------------------------------------
+------------------------------------
+Iteration                78.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          422177.000000
+StepsThisIter            5560.000000
+IterationTime            7.633031
+TimeSinceStart           12.078537
+ParamNorm           96.348961
+StepNorm            8.053243
+Sigma               0.009999
+PSigmaNorm          26.787236
+------------------------------------
+------------------------------------
+Iteration                79.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -18.833333
+TrainMaxReward           -9.000000
+StepsSinceStart          428749.000000
+StepsThisIter            6572.000000
+IterationTime            10.090953
+TimeSinceStart           12.247098
+ParamNorm           96.683235
+StepNorm            8.052339
+Sigma               0.009999
+PSigmaNorm          26.958022
+------------------------------------
+------------------------------------
+Iteration                80.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          433990.000000
+StepsThisIter            5241.000000
+IterationTime            6.938563
+TimeSinceStart           12.363084
+ParamNorm           97.028595
+StepNorm            8.057823
+Sigma               0.009999
+PSigmaNorm          27.131117
+------------------------------------
+------------------------------------
+Iteration                81.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          438799.000000
+StepsThisIter            4809.000000
+IterationTime            7.535557
+TimeSinceStart           12.489063
+ParamNorm           97.356331
+StepNorm            8.047339
+Sigma               0.009999
+PSigmaNorm          27.297687
+------------------------------------
+------------------------------------
+Iteration                82.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          443780.000000
+StepsThisIter            4981.000000
+IterationTime            6.389442
+TimeSinceStart           12.596012
+ParamNorm           97.682724
+StepNorm            8.049883
+Sigma               0.009999
+PSigmaNorm          27.464649
+------------------------------------
+------------------------------------
+Iteration                83.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          448453.000000
+StepsThisIter            4673.000000
+IterationTime            5.827769
+TimeSinceStart           12.693513
+ParamNorm           98.006699
+StepNorm            8.052625
+Sigma               0.009999
+PSigmaNorm          27.629030
+------------------------------------
+------------------------------------
+Iteration                84.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          453504.000000
+StepsThisIter            5051.000000
+IterationTime            7.047409
+TimeSinceStart           12.811372
+ParamNorm           98.338654
+StepNorm            8.049640
+Sigma               0.009999
+PSigmaNorm          27.796242
+------------------------------------
+------------------------------------
+Iteration                85.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          459611.000000
+StepsThisIter            6107.000000
+IterationTime            10.454008
+TimeSinceStart           12.985965
+ParamNorm           98.659248
+StepNorm            8.047395
+Sigma               0.009999
+PSigmaNorm          27.958733
+------------------------------------
+------------------------------------
+Iteration                86.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.333333
+TrainMaxReward           -17.000000
+StepsSinceStart          465430.000000
+StepsThisIter            5819.000000
+IterationTime            11.308454
+TimeSinceStart           13.174679
+ParamNorm           98.988861
+StepNorm            8.056319
+Sigma               0.009999
+PSigmaNorm          28.121113
+------------------------------------
+------------------------------------
+Iteration                87.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.333333
+TrainMaxReward           -19.000000
+StepsSinceStart          470559.000000
+StepsThisIter            5129.000000
+IterationTime            12.395803
+TimeSinceStart           13.381653
+ParamNorm           99.316353
+StepNorm            8.051829
+Sigma               0.009999
+PSigmaNorm          28.284104
+------------------------------------
+------------------------------------
+Iteration                88.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          475570.000000
+StepsThisIter            5011.000000
+IterationTime            8.252329
+TimeSinceStart           13.519542
+ParamNorm           99.639091
+StepNorm            8.048816
+Sigma               0.009999
+PSigmaNorm          28.445690
+------------------------------------
+------------------------------------
+Iteration                89.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          480804.000000
+StepsThisIter            5234.000000
+IterationTime            8.941996
+TimeSinceStart           13.669381
+ParamNorm           99.963402
+StepNorm            8.056675
+Sigma               0.009999
+PSigmaNorm          28.607320
+------------------------------------
+------------------------------------
+Iteration                90.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          485922.000000
+StepsThisIter            5118.000000
+IterationTime            7.143800
+TimeSinceStart           13.788808
+ParamNorm           100.284698
+StepNorm            8.049058
+Sigma               0.009999
+PSigmaNorm          28.766704
+------------------------------------
+------------------------------------
+Iteration                91.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          491564.000000
+StepsThisIter            5642.000000
+IterationTime            8.669982
+TimeSinceStart           13.933666
+ParamNorm           100.606415
+StepNorm            8.054396
+Sigma               0.009999
+PSigmaNorm          28.927487
+------------------------------------
+------------------------------------
+Iteration                92.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          496474.000000
+StepsThisIter            4910.000000
+IterationTime            6.477703
+TimeSinceStart           14.042086
+ParamNorm           100.927795
+StepNorm            8.059040
+Sigma               0.009999
+PSigmaNorm          29.084536
+------------------------------------
+------------------------------------
+Iteration                93.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          501702.000000
+StepsThisIter            5228.000000
+IterationTime            8.263403
+TimeSinceStart           14.180176
+ParamNorm           101.254494
+StepNorm            8.051039
+Sigma               0.009999
+PSigmaNorm          29.244661
+------------------------------------
+------------------------------------
+Iteration                94.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          506507.000000
+StepsThisIter            4805.000000
+IterationTime            6.222834
+TimeSinceStart           14.284244
+ParamNorm           101.573471
+StepNorm            8.047559
+Sigma               0.009999
+PSigmaNorm          29.401667
+------------------------------------
+------------------------------------
+Iteration                95.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          511167.000000
+StepsThisIter            4660.000000
+IterationTime            6.934157
+TimeSinceStart           14.400407
+ParamNorm           101.890984
+StepNorm            8.051776
+Sigma               0.009999
+PSigmaNorm          29.554271
+------------------------------------
+------------------------------------
+Iteration                96.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          515867.000000
+StepsThisIter            4700.000000
+IterationTime            6.083536
+TimeSinceStart           14.502446
+ParamNorm           102.207703
+StepNorm            8.056175
+Sigma               0.009999
+PSigmaNorm          29.710107
+------------------------------------
+------------------------------------
+Iteration                97.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          520690.000000
+StepsThisIter            4823.000000
+IterationTime            6.815041
+TimeSinceStart           14.616391
+ParamNorm           102.530075
+StepNorm            8.051366
+Sigma               0.009999
+PSigmaNorm          29.865623
+------------------------------------
+------------------------------------
+Iteration                98.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          525688.000000
+StepsThisIter            4998.000000
+IterationTime            8.206667
+TimeSinceStart           14.753528
+ParamNorm           102.841080
+StepNorm            8.055939
+Sigma               0.009999
+PSigmaNorm          30.018741
+------------------------------------
+------------------------------------
+Iteration                99.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          531166.000000
+StepsThisIter            5478.000000
+IterationTime            8.713918
+TimeSinceStart           14.899018
+ParamNorm           103.152962
+StepNorm            8.057241
+Sigma               0.009999
+PSigmaNorm          30.171099
+------------------------------------
+------------------------------------
+Iteration                100.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          535964.000000
+StepsThisIter            4798.000000
+IterationTime            7.983713
+TimeSinceStart           15.032353
+ParamNorm           103.470726
+StepNorm            8.050376
+Sigma               0.009999
+PSigmaNorm          30.322607
+------------------------------------
+------------------------------------
+Iteration                101.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          540658.000000
+StepsThisIter            4694.000000
+IterationTime            8.214296
+TimeSinceStart           15.169659
+ParamNorm           103.780769
+StepNorm            8.057371
+Sigma               0.009999
+PSigmaNorm          30.474161
+------------------------------------
+------------------------------------
+Iteration                102.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -19.666667
+TrainMaxReward           -15.000000
+StepsSinceStart          547324.000000
+StepsThisIter            6666.000000
+IterationTime            12.358041
+TimeSinceStart           15.376116
+ParamNorm           104.101372
+StepNorm            8.051825
+Sigma               0.009999
+PSigmaNorm          30.628258
+------------------------------------
+------------------------------------
+Iteration                103.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          552201.000000
+StepsThisIter            4877.000000
+IterationTime            7.341983
+TimeSinceStart           15.498827
+ParamNorm           104.407730
+StepNorm            8.048801
+Sigma               0.009999
+PSigmaNorm          30.777590
+------------------------------------
+------------------------------------
+Iteration                104.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.333333
+TrainMaxReward           -17.000000
+StepsSinceStart          557356.000000
+StepsThisIter            5155.000000
+IterationTime            11.841795
+TimeSinceStart           15.696561
+ParamNorm           104.716949
+StepNorm            8.049245
+Sigma               0.009999
+PSigmaNorm          30.923086
+------------------------------------
+------------------------------------
+Iteration                105.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          562273.000000
+StepsThisIter            4917.000000
+IterationTime            8.935487
+TimeSinceStart           15.845841
+ParamNorm           105.027534
+StepNorm            8.048933
+Sigma               0.009999
+PSigmaNorm          31.075580
+------------------------------------
+------------------------------------
+Iteration                106.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          567070.000000
+StepsThisIter            4797.000000
+IterationTime            7.587329
+TimeSinceStart           15.972566
+ParamNorm           105.342216
+StepNorm            8.053580
+Sigma               0.009999
+PSigmaNorm          31.226138
+------------------------------------
+------------------------------------
+Iteration                107.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          571949.000000
+StepsThisIter            4879.000000
+IterationTime            8.193229
+TimeSinceStart           16.109489
+ParamNorm           105.645378
+StepNorm            8.061322
+Sigma               0.009999
+PSigmaNorm          31.371908
+------------------------------------
+------------------------------------
+Iteration                108.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          576870.000000
+StepsThisIter            4921.000000
+IterationTime            7.554160
+TimeSinceStart           16.235753
+ParamNorm           105.942131
+StepNorm            8.054773
+Sigma               0.009999
+PSigmaNorm          31.515669
+------------------------------------
+------------------------------------
+Iteration                109.000000
+EvalMeanReward           -19.000000
+EvalMaxReward            -18.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          581600.000000
+StepsThisIter            4730.000000
+IterationTime            7.800829
+TimeSinceStart           16.366111
+ParamNorm           106.248940
+StepNorm            8.045529
+Sigma               0.009999
+PSigmaNorm          31.660942
+------------------------------------
+------------------------------------
+Iteration                110.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          586882.000000
+StepsThisIter            5282.000000
+IterationTime            8.715456
+TimeSinceStart           16.512048
+ParamNorm           106.563828
+StepNorm            8.050605
+Sigma               0.009999
+PSigmaNorm          31.808408
+------------------------------------
+------------------------------------
+Iteration                111.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          591893.000000
+StepsThisIter            5011.000000
+IterationTime            6.806063
+TimeSinceStart           16.625876
+ParamNorm           106.876701
+StepNorm            8.056865
+Sigma               0.009998
+PSigmaNorm          31.954767
+------------------------------------
+------------------------------------
+Iteration                112.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          596637.000000
+StepsThisIter            4744.000000
+IterationTime            5.860821
+TimeSinceStart           16.723932
+ParamNorm           107.173279
+StepNorm            8.057650
+Sigma               0.009998
+PSigmaNorm          32.094282
+------------------------------------
+------------------------------------
+Iteration                113.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          601342.000000
+StepsThisIter            4705.000000
+IterationTime            5.917061
+TimeSinceStart           16.822907
+ParamNorm           107.467216
+StepNorm            8.058701
+Sigma               0.009998
+PSigmaNorm          32.234803
+------------------------------------
+------------------------------------
+Iteration                114.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          605967.000000
+StepsThisIter            4625.000000
+IterationTime            5.725194
+TimeSinceStart           16.918672
+ParamNorm           107.770454
+StepNorm            8.054959
+Sigma               0.009998
+PSigmaNorm          32.377256
+------------------------------------
+------------------------------------
+Iteration                115.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          610827.000000
+StepsThisIter            4860.000000
+IterationTime            6.393643
+TimeSinceStart           17.025580
+ParamNorm           108.065414
+StepNorm            8.049522
+Sigma               0.009998
+PSigmaNorm          32.516580
+------------------------------------
+------------------------------------
+Iteration                116.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          615436.000000
+StepsThisIter            4609.000000
+IterationTime            5.740966
+TimeSinceStart           17.121622
+ParamNorm           108.368019
+StepNorm            8.055914
+Sigma               0.009998
+PSigmaNorm          32.657321
+------------------------------------
+------------------------------------
+Iteration                117.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          620204.000000
+StepsThisIter            4768.000000
+IterationTime            6.246355
+TimeSinceStart           17.226094
+ParamNorm           108.665352
+StepNorm            8.049827
+Sigma               0.009998
+PSigmaNorm          32.798073
+------------------------------------
+------------------------------------
+Iteration                118.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          624762.000000
+StepsThisIter            4558.000000
+IterationTime            6.036477
+TimeSinceStart           17.327056
+ParamNorm           108.952820
+StepNorm            8.054439
+Sigma               0.009998
+PSigmaNorm          32.935079
+------------------------------------
+------------------------------------
+Iteration                119.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          629316.000000
+StepsThisIter            4554.000000
+IterationTime            5.553919
+TimeSinceStart           17.419988
+ParamNorm           109.249100
+StepNorm            8.053552
+Sigma               0.009998
+PSigmaNorm          33.071870
+------------------------------------
+------------------------------------
+Iteration                120.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          633868.000000
+StepsThisIter            4552.000000
+IterationTime            5.595407
+TimeSinceStart           17.513540
+ParamNorm           109.545395
+StepNorm            8.055724
+Sigma               0.009998
+PSigmaNorm          33.213081
+------------------------------------
+------------------------------------
+Iteration                121.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          638594.000000
+StepsThisIter            4726.000000
+IterationTime            5.819634
+TimeSinceStart           17.610849
+ParamNorm           109.844765
+StepNorm            8.051001
+Sigma               0.009998
+PSigmaNorm          33.351633
+------------------------------------
+------------------------------------
+Iteration                122.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          643136.000000
+StepsThisIter            4542.000000
+IterationTime            6.398775
+TimeSinceStart           17.717970
+ParamNorm           110.147507
+StepNorm            8.052492
+Sigma               0.009998
+PSigmaNorm          33.492140
+------------------------------------
+------------------------------------
+Iteration                123.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          647686.000000
+StepsThisIter            4550.000000
+IterationTime            7.470984
+TimeSinceStart           17.842846
+ParamNorm           110.440712
+StepNorm            8.065452
+Sigma               0.009998
+PSigmaNorm          33.630238
+------------------------------------
+------------------------------------
+Iteration                124.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          652233.000000
+StepsThisIter            4547.000000
+IterationTime            7.009510
+TimeSinceStart           17.959958
+ParamNorm           110.734283
+StepNorm            8.051196
+Sigma               0.009998
+PSigmaNorm          33.764719
+------------------------------------
+------------------------------------
+Iteration                125.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          656814.000000
+StepsThisIter            4581.000000
+IterationTime            8.908174
+TimeSinceStart           18.108831
+ParamNorm           111.033638
+StepNorm            8.054983
+Sigma               0.009998
+PSigmaNorm          33.905223
+------------------------------------
+------------------------------------
+Iteration                126.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          661396.000000
+StepsThisIter            4582.000000
+IterationTime            7.231823
+TimeSinceStart           18.229720
+ParamNorm           111.331749
+StepNorm            8.054558
+Sigma               0.009998
+PSigmaNorm          34.041813
+------------------------------------
+------------------------------------
+Iteration                127.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          665949.000000
+StepsThisIter            4553.000000
+IterationTime            5.577420
+TimeSinceStart           18.323046
+ParamNorm           111.632118
+StepNorm            8.050390
+Sigma               0.009998
+PSigmaNorm          34.180266
+------------------------------------
+------------------------------------
+Iteration                128.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          670510.000000
+StepsThisIter            4561.000000
+IterationTime            5.689967
+TimeSinceStart           18.418220
+ParamNorm           111.927765
+StepNorm            8.058503
+Sigma               0.009998
+PSigmaNorm          34.317624
+------------------------------------
+------------------------------------
+Iteration                129.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          675137.000000
+StepsThisIter            4627.000000
+IterationTime            7.802636
+TimeSinceStart           18.548638
+ParamNorm           112.209702
+StepNorm            8.054801
+Sigma               0.009998
+PSigmaNorm          34.447973
+------------------------------------
+------------------------------------
+Iteration                130.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          679764.000000
+StepsThisIter            4627.000000
+IterationTime            5.851322
+TimeSinceStart           18.646524
+ParamNorm           112.503258
+StepNorm            8.053286
+Sigma               0.009998
+PSigmaNorm          34.584607
+------------------------------------
+------------------------------------
+Iteration                131.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          684320.000000
+StepsThisIter            4556.000000
+IterationTime            5.610919
+TimeSinceStart           18.740389
+ParamNorm           112.791435
+StepNorm            8.059086
+Sigma               0.009998
+PSigmaNorm          34.719519
+------------------------------------
+------------------------------------
+Iteration                132.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          688939.000000
+StepsThisIter            4619.000000
+IterationTime            5.814613
+TimeSinceStart           18.837647
+ParamNorm           113.084045
+StepNorm            8.052974
+Sigma               0.009998
+PSigmaNorm          34.853314
+------------------------------------
+------------------------------------
+Iteration                133.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          693494.000000
+StepsThisIter            4555.000000
+IterationTime            5.890136
+TimeSinceStart           18.936196
+ParamNorm           113.365089
+StepNorm            8.051769
+Sigma               0.009998
+PSigmaNorm          34.985514
+------------------------------------
+------------------------------------
+Iteration                134.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          698131.000000
+StepsThisIter            4637.000000
+IterationTime            5.927387
+TimeSinceStart           19.035763
+ParamNorm           113.653625
+StepNorm            8.054980
+Sigma               0.009998
+PSigmaNorm          35.116113
+------------------------------------
+------------------------------------
+Iteration                135.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          702783.000000
+StepsThisIter            4652.000000
+IterationTime            5.814090
+TimeSinceStart           19.133020
+ParamNorm           113.938736
+StepNorm            8.059417
+Sigma               0.009998
+PSigmaNorm          35.247014
+------------------------------------
+------------------------------------
+Iteration                136.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          707432.000000
+StepsThisIter            4649.000000
+IterationTime            5.798334
+TimeSinceStart           19.230025
+ParamNorm           114.226891
+StepNorm            8.053920
+Sigma               0.009998
+PSigmaNorm          35.376882
+------------------------------------
+------------------------------------
+Iteration                137.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          712185.000000
+StepsThisIter            4753.000000
+IterationTime            5.868014
+TimeSinceStart           19.328208
+ParamNorm           114.501404
+StepNorm            8.052971
+Sigma               0.009998
+PSigmaNorm          35.503007
+------------------------------------
+------------------------------------
+Iteration                138.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          717341.000000
+StepsThisIter            5156.000000
+IterationTime            7.089017
+TimeSinceStart           19.446719
+ParamNorm           114.791656
+StepNorm            8.045188
+Sigma               0.009998
+PSigmaNorm          35.631781
+------------------------------------
+------------------------------------
+Iteration                139.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          721918.000000
+StepsThisIter            4577.000000
+IterationTime            5.636478
+TimeSinceStart           19.541014
+ParamNorm           115.066055
+StepNorm            8.047452
+Sigma               0.009998
+PSigmaNorm          35.758483
+------------------------------------
+------------------------------------
+Iteration                140.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          726468.000000
+StepsThisIter            4550.000000
+IterationTime            5.627718
+TimeSinceStart           19.635208
+ParamNorm           115.349594
+StepNorm            8.053380
+Sigma               0.009998
+PSigmaNorm          35.886061
+------------------------------------
+------------------------------------
+Iteration                141.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          731116.000000
+StepsThisIter            4648.000000
+IterationTime            5.747489
+TimeSinceStart           19.731365
+ParamNorm           115.629829
+StepNorm            8.050775
+Sigma               0.009998
+PSigmaNorm          36.013770
+------------------------------------
+------------------------------------
+Iteration                142.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          735776.000000
+StepsThisIter            4660.000000
+IterationTime            6.675321
+TimeSinceStart           19.843111
+ParamNorm           115.912041
+StepNorm            8.056715
+Sigma               0.009998
+PSigmaNorm          36.143944
+------------------------------------
+------------------------------------
+Iteration                143.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -19.000000
+StepsSinceStart          740477.000000
+StepsThisIter            4701.000000
+IterationTime            6.324803
+TimeSinceStart           19.948884
+ParamNorm           116.179276
+StepNorm            8.051025
+Sigma               0.009998
+PSigmaNorm          36.266929
+------------------------------------
+------------------------------------
+Iteration                144.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          745189.000000
+StepsThisIter            4712.000000
+IterationTime            5.860113
+TimeSinceStart           20.046907
+ParamNorm           116.463425
+StepNorm            8.045684
+Sigma               0.009998
+PSigmaNorm          36.394408
+------------------------------------
+------------------------------------
+Iteration                145.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          749781.000000
+StepsThisIter            4592.000000
+IterationTime            5.711196
+TimeSinceStart           20.142454
+ParamNorm           116.739059
+StepNorm            8.053471
+Sigma               0.009998
+PSigmaNorm          36.520232
+------------------------------------
+------------------------------------
+Iteration                146.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          754402.000000
+StepsThisIter            4621.000000
+IterationTime            5.821296
+TimeSinceStart           20.239848
+ParamNorm           117.019905
+StepNorm            8.052350
+Sigma               0.009998
+PSigmaNorm          36.648520
+------------------------------------
+------------------------------------
+Iteration                147.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          758954.000000
+StepsThisIter            4552.000000
+IterationTime            5.565550
+TimeSinceStart           20.332984
+ParamNorm           117.291008
+StepNorm            8.047054
+Sigma               0.009998
+PSigmaNorm          36.770653
+------------------------------------
+------------------------------------
+Iteration                148.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          763679.000000
+StepsThisIter            4725.000000
+IterationTime            6.044237
+TimeSinceStart           20.434092
+ParamNorm           117.568314
+StepNorm            8.050311
+Sigma               0.009998
+PSigmaNorm          36.896605
+------------------------------------
+------------------------------------
+Iteration                149.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -19.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          768349.000000
+StepsThisIter            4670.000000
+IterationTime            6.108979
+TimeSinceStart           20.536304
+ParamNorm           117.834648
+StepNorm            8.057579
+Sigma               0.009998
+PSigmaNorm          37.020079
+------------------------------------
+------------------------------------
+Iteration                150.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          773073.000000
+StepsThisIter            4724.000000
+IterationTime            5.718362
+TimeSinceStart           20.631983
+ParamNorm           118.110840
+StepNorm            8.059264
+Sigma               0.009998
+PSigmaNorm          37.143384
+------------------------------------
+------------------------------------
+Iteration                151.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          777840.000000
+StepsThisIter            4767.000000
+IterationTime            5.901261
+TimeSinceStart           20.730757
+ParamNorm           118.383591
+StepNorm            8.056941
+Sigma               0.009998
+PSigmaNorm          37.265248
+------------------------------------
+------------------------------------
+Iteration                152.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          782489.000000
+StepsThisIter            4649.000000
+IterationTime            6.177326
+TimeSinceStart           20.834104
+ParamNorm           118.661720
+StepNorm            8.049591
+Sigma               0.009998
+PSigmaNorm          37.391358
+------------------------------------
+------------------------------------
+Iteration                153.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.500000
+TrainMaxReward           -20.000000
+StepsSinceStart          787317.000000
+StepsThisIter            4828.000000
+IterationTime            12.058008
+TimeSinceStart           21.035433
+ParamNorm           118.929199
+StepNorm            8.054200
+Sigma               0.009998
+PSigmaNorm          37.514550
+------------------------------------
+------------------------------------
+Iteration                154.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          792026.000000
+StepsThisIter            4709.000000
+IterationTime            8.833979
+TimeSinceStart           21.182982
+ParamNorm           119.188263
+StepNorm            8.044765
+Sigma               0.009998
+PSigmaNorm          37.633459
+------------------------------------
+------------------------------------
+Iteration                155.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.666667
+TrainMaxReward           -20.000000
+StepsSinceStart          796851.000000
+StepsThisIter            4825.000000
+IterationTime            6.228208
+TimeSinceStart           21.287158
+ParamNorm           119.463669
+StepNorm            8.054998
+Sigma               0.009998
+PSigmaNorm          37.755064
+------------------------------------
+------------------------------------
+Iteration                156.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          802225.000000
+StepsThisIter            5374.000000
+IterationTime            7.214685
+TimeSinceStart           21.407740
+ParamNorm           119.735359
+StepNorm            8.061647
+Sigma               0.009998
+PSigmaNorm          37.879413
+------------------------------------
+------------------------------------
+Iteration                157.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          807050.000000
+StepsThisIter            4825.000000
+IterationTime            5.886995
+TimeSinceStart           21.506124
+ParamNorm           120.020096
+StepNorm            8.050298
+Sigma               0.009998
+PSigmaNorm          38.004673
+------------------------------------
+------------------------------------
+Iteration                158.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          811651.000000
+StepsThisIter            4601.000000
+IterationTime            5.734815
+TimeSinceStart           21.602005
+ParamNorm           120.284210
+StepNorm            8.046046
+Sigma               0.009998
+PSigmaNorm          38.124104
+------------------------------------
+------------------------------------
+Iteration                159.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          816299.000000
+StepsThisIter            4648.000000
+IterationTime            7.058253
+TimeSinceStart           21.719962
+ParamNorm           120.560722
+StepNorm            8.051582
+Sigma               0.009998
+PSigmaNorm          38.244367
+------------------------------------
+------------------------------------
+Iteration                160.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          820945.000000
+StepsThisIter            4646.000000
+IterationTime            5.817081
+TimeSinceStart           21.817303
+ParamNorm           120.819923
+StepNorm            8.054964
+Sigma               0.009998
+PSigmaNorm          38.359924
+------------------------------------
+------------------------------------
+Iteration                161.000000
+EvalMeanReward           -20.500000
+EvalMaxReward            -20.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          826153.000000
+StepsThisIter            5208.000000
+IterationTime            7.357053
+TimeSinceStart           21.940292
+ParamNorm           121.096626
+StepNorm            8.063517
+Sigma               0.009998
+PSigmaNorm          38.483177
+------------------------------------
+------------------------------------
+Iteration                162.000000
+EvalMeanReward           -21.000000
+EvalMaxReward            -21.000000
+TrainMeanReward          -20.833333
+TrainMaxReward           -20.000000
+StepsSinceStart          830802.000000
+StepsThisIter            4649.000000
+IterationTime            5.869630
+TimeSinceStart           22.038619
+ParamNorm           121.366661
+StepNorm            8.052087
+Sigma               0.009998
+PSigmaNorm          38.602997
+------------------------------------
+------------------------------------
+Iteration                163.000000
+EvalMeanReward           -20.000000
+EvalMaxReward            -20.000000
+TrainMeanReward          -21.000000
+TrainMaxReward           -21.000000
+StepsSinceStart          836466.000000
+StepsThisIter            5664.000000
+IterationTime            8.365859
+TimeSinceStart           22.178421
+ParamNorm           121.630180
+StepNorm            8.056838
+Sigma               0.009998
+PSigmaNorm          38.717136
+------------------------------------

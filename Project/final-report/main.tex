@@ -1,0 +1,174 @@
+% --------------------------------------------------------------
+%                         Template
+% --------------------------------------------------------------
+\documentclass[10pt]{article} %draft = show box warnings
+\usepackage[a4paper, total={6.5in,10.2in}]{geometry} % Flexible and complete interface to document dimensions
+\usepackage[utf8]{inputenc} % Accept different input encodings [utf8]
+\usepackage[T1]{fontenc} % Standard package for selecting font encodings
+\usepackage{lmodern} % Good looking T1 font
+
+% --------------------------------------------------------------
+%                         Format
+% --------------------------------------------------------------
+\usepackage[linktoc=all, backref=page, colorlinks = true, citecolor=cyan, linkcolor=cyan]{hyperref}
+
+% Bibliography Style
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+% Workaround for apacite
+\let \backreforig \backref
+\renewcommand*{\backref}[1]{[\backreforig{#1}]}
+\AtBeginDocument{%
+    \renewcommand*{\PrintBackRefs}[1]{\unskip}%
+}
+
+
+% --------------------------------------------------------------
+%                       Packages
+% --------------------------------------------------------------
+\usepackage{float} % Improved interface for floating objects
+\usepackage{amsmath,amsthm,amssymb} % American Mathematics Society facilities
+% \usepackage[linktoc=all]{hyperref} % Create hyperlinks
+\usepackage{graphicx} % Images
+\usepackage[nameinlink,noabbrev]{cleveref} % Clever references
+\usepackage[all]{hypcap} % Links to float instead of caption
+\usepackage{ragged2e} % Justify text
+\usepackage{subcaption}
+\usepackage{svg}
+
+% --------------------------------------------------------------
+%                       Document
+% --------------------------------------------------------------
+\begin{document}
+% --------------------------------------------------------------
+%                       Header
+% --------------------------------------------------------------
+\noindent
+\normalsize\textbf{Intelligence Artificielle et Robotique} \hfill \textbf{Sorbonne Université}\\
+\normalsize\textbf{IAR} \hfill \textbf{December 2019}
+\begin{flushright}
+{\small Roger Leite Lucena -- \texttt{rogerleitelucena@gmail.com} } \\
+{\small Alexandre Ribeiro João Macedo --  \texttt{arj.macedo@gmail.com}}\vspace{20pt}
+\end{flushright}
+\centerline{\large \textbf{Back to Basics: Benchmarking Canonical Evolution Strategies for Playing Atari}}
+\begin{center}
+Project based on the paper \cite{back-to-basics}.
+\end{center}
+% --------------------------------------------------------------
+%                       Content
+% --------------------------------------------------------------
+
+\section{Introduction}
+
+The idea of this paper is to show that even simple Evolution Strategies (ES) algorithms, such as Canonical ES, can be a viable alternative to Reinforcement Learning (RL) algorithms on a set of challenging deep RL problems (such as Atari games and MuJoCo humanoid locomotion benchmarks). 
+
+% While OpenAI ES, an example of the specific class of natural evolution strategies algorithms, has already achieved that, the authors here manage to show that even simpler ES algorithms can achieve the same or even better performance results. 
+
+In our work we looked first to reproduce, at least partially given our limitations regarding the computing power we had access to, some of the results in the paper for one of the games. Then, we studied the influence on the final performance of some tools the authors used such as Batch Normalization, and also tested the model with a simpler version of the Neural Network Architecture that was referenced in the paper. Finally, we decided to study how the field advanced after their article, some of the follow up research works developed and how their technique was improved, looking also to see the impact it had ever since.
+
+% for one of the games - with both Canonical ES and OpenAI ES
+
+\section{Methods and Results}
+Unfortunately for these tests we had a CPU budget. We were using one CPU Intel Xeon E5-2690 v4 (16) @ 2.599GHz that was shared with others. So the tests that we decided to do were considering these constraints.
+
+When deciding which Atari game we would choose to reproduce some of the results shown in the paper, we looked mainly at the Figure 5 at page 6 of \cite{back-to-basics}. Since we do not have access to the same amount of computational power and \textbf{Pong} was the one to converge to the maximum score the fastest, we decided to proceed with it.
+
+With \Cref{fig:results-90} we plot the results obtained for both the Test set (Evaluation Score) and the Training set, using 6 CPUs for training during 90 minutes. 
+
+\begin{figure}[ht]
+\captionsetup{justification=centering}
+\begin{subfigure}[t]{.32\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/EvalCanonical_ES_1h30_6_CPUs.svg}
+		\caption{Canonical ES - Evaluation Score}
+		\label{fig:canonical-eval}
+\end{subfigure}
+\begin{subfigure}[t]{.32\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/EvalCanonical_ES_Modified_Network_1h30_6_CPUs.svg}
+		\caption{Canonical ES Modified Network - Evaluation Score}
+		\label{fig:canonical-modified-eval}
+\end{subfigure}
+\begin{subfigure}[t]{.32\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/EvalCanonical_ES_without_Batch_Normalization_1h30_6_CPUs.svg}
+		\caption{Canonical ES without Batch Normalization - Evaluation Score}
+		\label{fig:canonical-without-bn-eval}
+\end{subfigure}
+
+\begin{subfigure}[t]{.32\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/TrainCanonical_ES_1h30_6_CPUs.svg}
+		\caption{Canonical ES - Training Score}
+		\label{fig:canonical-train}
+\end{subfigure}
+\begin{subfigure}[t]{.32\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/TrainCanonical_ES_Modified_Network_1h30_6_CPUs.svg}
+		\caption{Canonical ES Modified Network - Training Score}
+		\label{fig:canonical-modified-train}
+\end{subfigure}
+\begin{subfigure}[t]{.32\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/TrainCanonical_ES_without_Batch_Normalization_1h30_6_CPUs.svg}
+		\caption{Canonical ES without Batch Normalization - Training Score}
+		\label{fig:canonical-without-bn-train}
+\end{subfigure}
+\caption{Results with 6 CPUs - 90 minutes (graph smoothed with a moving average for every 5 runs)}
+\label{fig:results-90}
+\end{figure}
+
+\begin{figure}[ht]
+\captionsetup{justification=centering}
+\begin{subfigure}[t]{.49\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/EvalCanonical_ES_5h_16_CPUs.svg}
+		\caption{Canonical ES - Evaluation Score}
+		\label{fig:canonical-long-run-eval}
+\end{subfigure}
+\begin{subfigure}[t]{.49\textwidth}
+		\centering
+		\includesvg[width=.95\linewidth]{figures/TrainCanonical_ES_5h_16_CPUs.svg}
+		\caption{Canonical ES - Training Score}
+		\label{fig:canonical-long-run-train}
+\end{subfigure}
+
+\caption{Results with 16 CPUs - 300 minutes (graph smoothed with a moving average for every 5 runs)}
+\label{fig:results-300}
+\end{figure}
+
+\subsection{Canonical ES}
+With the images above we can already have a glimpse on how the variance is expressive for this problem and this approach (even after smoothing out the graph with a moving average for every 5 runs - sliding window), as it was pointed by \cite{back-to-basics} as well. Also, we see the importance of the computing power as no major increasing learning curve is observed in \Cref{fig:canonical-eval}, emphasizing that we are only at the very beginning of the learning process.
+
+This way, to try to visualize a little how the model would perform and learn with some more time and computing power we tested it for 300 minutes and 16 CPUs, as shown in \Cref{fig:results-300}. Then, we could indeed observe a major increasing learning curve being outlined, with major score values being achieved as time passes as well, as expected.
+
+\subsection{Canonical ES with simpler architecture}
+Removing the third Convolutional Layer and its Batch Normalization layer we see that, with \Cref{fig:canonical-modified-eval}, the scores are more timid at the beginning and the learning is clearly delayed. This result is expected since here the Neural Network is comparatively less powerful and still has to deal with the same complex problem (and the corresponding complex dataset) of learning to play Pong, being in disadvantage compared to the original architecture. 
+
+\subsection{Canonical ES without Batch Normalization}
+This is the most surprising result of our work as it outlines the importance of Batch Normalization (BN) for the problem at hand. With \Cref{fig:canonical-without-bn-eval} we observe that the model does not learn anything without Batch Normalization - evidences to the fact that the problem of internal covariance shift, tackled by BN, is very present here.
+
+\section{Following Research}
+A number of articles were developed following the ideas of \cite{back-to-basics}. From the same University of Freiburg, for example, with \cite{pel} the objective was to qualitatively improve Canonical ES, since sometimes for games like Pong the agent, despite achieving very good overall scores, did not manage to respond in some particularly simple situations that would be done easily by a human. The idea the authors exploited was to let the agent play short and easy tasks with limited lengths first, and then use the gained knowledge to further solve long and hard tasks with progressive lengths - an algorithm they named PEL (Progressive
+Episode Lengths) and incorporated with the ES. The results are expressive: average improvements of 80\% and 32\% after 2 hours and 10 hours of training, respectively, compared to Canonical ES.
+
+Also, as \cite{back-to-basics} proposed, mixing together Evolution Strategies with deep Reinforcement Learning methods, instead of using only one or the other (as done by \cite{back-to-basics} itself and OpenAI too with \cite{salimans2017evolution} -  which focused only on ES), could be an idea to advance the state of the art in the field of policy search. 
+
+That is exactly what \cite{cem-rl} and \cite{erl} showed possible. With \cite{cem-rl} it is shown that a combination of CEM (Cross-Entropy Method - an ES approach) and TD3 (Twin Delayed Deep Deterministic policy gradient - a RL method) outperforms competitors such as TD3 solo, CEM solo or even ERL (similar approach mixing ES and RL introduced by \cite{erl}, standing for Evolutionary
+Reinforcement Learning) given three different benchmarks (Half-Cheetah-v2, Hopper-v2 and Walker2d-v2). It also offers a satisfactory trade-off between performance and sample efficiency. 
+
+These works open a spectrum of possible follow up research fronts in the field, mixing the ES and RL methods together as the strengths of one complement the weaknesses of the other. 
+
+\section{Conclusion}
+
+From the studies above we can have a glimpse on how Evolution Strategies can be a promising alternative for Reinforcement Learning, even on problems considered so far traditionally deep RL ones. Also, specifically for Pong and Canonical ES, we observed how the Batch Normalization was important for learning. We observed as well how the variance is present here and how having access to computing power can play a major role in achieving more reasonable results in this field. 
+
+Finally, while going through papers and Google Scholars when looking for following research, we observed how \cite{back-to-basics} helped to contribute to the field and ignite a number of follow up research fronts. Mainly, it attested that even simpler ES methods can be competitive alternatives to deep RL ones, and induced methods mixing both of them together to achieve and improve the state of the art.
+
+% --------------------------------------------------------------
+%                       Bibliography
+% --------------------------------------------------------------
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\bibliography{bibliography}
+\end{document}
