@@ -32,6 +32,8 @@ bn_args = {
 
 
 # Assumes that this will be called only once and changes bn_args dictionary
+
+# (Original Neural Network Architecture for Canonical ES)
 def Nature(c_i, out_num, nonlin, is_training):
     # Adjust bn_args dictionary
     bn_args["activation_fn"] = nonlin
@@ -61,6 +63,7 @@ def Nature(c_i, out_num, nonlin, is_training):
     c_i = scale_shift(c_i, name="scale")
     return c_i
 
+# (Neural Network Architecture without Batch Normalization)
 def Nature_No_BN(c_i, out_num, nonlin, is_training):
     # Adjust bn_args dictionary
     bn_args["activation_fn"] = nonlin
@@ -68,7 +71,6 @@ def Nature_No_BN(c_i, out_num, nonlin, is_training):
     c_i = conv(c_i, 32, 8, 4, **conv_args)
 
     c_i = conv(c_i, 64, 4, 2, **conv_args)
-    c_i = bn(c_i, **bn_args)
 
     c_i = conv(c_i, 64, 3, 1, **conv_args)
 
@@ -86,6 +88,7 @@ def Nature_No_BN(c_i, out_num, nonlin, is_training):
     c_i = scale_shift(c_i, name="scale")
     return c_i
 
+# (Neural Network Architecture simplified - the 3rd convolutional layer was removed)
 def Nature_Simple(c_i, out_num, nonlin, is_training):
     # Adjust bn_args dictionary
     bn_args["activation_fn"] = nonlin
