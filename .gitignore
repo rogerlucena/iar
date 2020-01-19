@@ -133,3 +133,6 @@ dmypy.json
 *.aux
 *.out
 *.log
+
+# Images
+*.jpg
